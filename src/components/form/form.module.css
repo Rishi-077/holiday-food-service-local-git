@@ -1,0 +1,29 @@
+
+/* input field */
+.input_field_white {
+  border-radius: 4px !important;
+  border: solid 1px var(--gray) !important;
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  width: 100% !important;
+  padding-right: 38px !important; /* Add spacing for eye icon */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input_field_white:disabled {
+  border-radius: 4px !important;
+  border: solid 1px var(--gray) !important;
+  color: var(--dark) !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  width: 100% !important;
+}
+
+.input_field_dark::placeholder,
+.input_field_white::placeholder {
+  color: var(--dark) !important;
+  font-size: 13px !important;
+  font-weight: 400;
+}
