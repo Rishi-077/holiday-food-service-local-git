@@ -7,7 +7,7 @@ import Footer from "./layouts/footer/footer";
 import About from "./about/about";
 import Contact from "./contact/contact";
 import ScrollToTop from "../../hooks/ScrollToTop";
-import Loader from "../../components/loading/Loading";
+import Loader from "../../components/loading/loading";
 
 function Landing() {
   const location = useLocation();
@@ -44,3 +44,4 @@ function Landing() {
 }
 
 export default Landing;
+
