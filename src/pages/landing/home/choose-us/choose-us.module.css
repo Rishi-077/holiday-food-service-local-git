@@ -1,0 +1,33 @@
+.choose_us_vector_bg {
+  background-color: #feeae2;
+  padding: 20px;
+  border-radius: 50%;
+  width: fit-content;
+}
+
+.choose_us {
+  width: 100%;
+  height: auto;
+}
+
+.choose_us img {
+  width: 100%;
+  height: auto;
+}
+
+.choose_us_section {
+  padding-top: 250px !important;
+  z-index: 2 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .choose_us_section {
+    padding-top: 150px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .choose_us_section {
+    padding-top: 100px !important;
+  }
+}

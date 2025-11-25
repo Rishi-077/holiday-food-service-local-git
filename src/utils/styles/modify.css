@@ -1,0 +1,316 @@
+/* --------------------------------------------------------------------------------------- */
+/* ------------------------------------------scroll bar hide --------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* ------------------------------------------Side bar --------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+.ps-menu-button {
+  color: var(--black) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.active-sub-menu.ps-menuitem-root.ps-open {
+  background-color: var(--primary) !important;
+}
+.active-sub-child-menu.ps-menuitem-root.ps-open {
+  background-color: var(--white) !important;
+}
+
+.active-sub-menu .ps-menu-button.ps-open:hover {
+  background-color: var(--primary) !important;
+}
+.active-sub-child-menu .ps-menu-button.ps-open:hover {
+  background-color: var(--white) !important;
+}
+
+.active-sub-child-menu .ps-menu-button.ps-open span {
+  color: var(--primary) !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+.ps-menu-button.ps-open span {
+  color: var(--white) !important;
+}
+
+.ps-menu-button .ps-active {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.ps-submenu-expand-icon {
+  display: none !important;
+}
+
+.ps-submenu-content ul .ps-menuitem-root .ps-menu-button .ps-active {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+}
+
+.ps-submenu-content ul .ps-menuitem-root .ps-menu-button {
+  color: #808093 !important;
+  font-weight: 600 !important;
+}
+
+/* .active-sub-menu.ps-menu-button {
+  background-color: #e2e2e2 !important;
+} */
+
+.main-active a {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.main-active a:hover {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+/* .active-open .ps-submenu-content {
+  margin-top: 25px !important;
+} */
+
+/* material table  */
+
+.MuiTableHead-root {
+  background-color: #f6f6f6 !important;
+}
+
+.MuiTableCell-root {
+  padding: 20px 30px !important ;
+}
+
+.MuiButtonBase-root {
+  color: black !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.MuiTableCell-root {
+  padding: 8px 10px !important;
+  border-bottom: none !important;
+}
+
+.MuiTablePagination-selectLabel {
+  margin-bottom: 0 !important;
+}
+
+.MuiTablePagination-displayedRows {
+  margin-bottom: 0 !important;
+}
+
+.MuiTableContainer-root.css-rorn0c-MuiTableContainer-root {
+  min-width: fit-content !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+Date Picker component modified CSS 
+------------------------------
+-----------------------------
+------------------------------*/
+
+/* .date-picker {
+  position: relative;
+  cursor: pointer;
+  border: 2.2px solid var(--gray);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.date-picker input[type="date"] {
+  width: 100%;
+  padding-right: 30px; 
+}
+
+.date-picker::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("../../assets/icons/date-picker.svg") no-repeat center center;
+  background-size: contain;
+} */
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+/* .react-datepicker__close-icon::after {
+  cursor: pointer;
+  background-color: #000000 !important;
+  color: #fff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  content: "×";
+} */
+
+.react-datepicker__close-icon {
+  display: none !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 1.3rem !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+  padding-top: 10px !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+Sweet Alert component modified CSS 
+------------------------------
+-----------------------------
+------------------------------*/
+
+.swal2-confirm.swal2-default-outline {
+  background-color: var(--primary) !important;
+}
+.swal2-cancel.swal2-default-outline {
+  background-color: var(--red) !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+Chart tooltip component modified CSS 
+------------------------------
+-----------------------------
+------------------------------*/
+
+.recharts-rectangle.recharts-tooltip-cursor {
+  fill: none !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+Drawer component modified CSS 
+------------------------------
+-----------------------------
+------------------------------*/
+
+/* .my-drawer-collapse .MuiPaper-root {
+  margin-top: 60px !important;
+} */
+
+.my-drawer-collapse .MuiBackdrop-root {
+  display: none !important;
+}
+
+.custom-multi-select .select__control {
+  align-items: start !important;
+}
+
+/* .custom-multi-select .select__menu {
+  position: absolute !important;
+  top: 40%;
+  left: 10%;
+  width: 500px;
+} */
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+Make cursor unreacheable if button disabled
+------------------------------
+-----------------------------
+------------------------------*/
+
+button:disabled {
+  cursor: not-allowed !important;
+  pointer-events: auto !important;
+}
+
+.btn:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.6;
+  pointer-events: auto !important;
+}
+
+button[disabled] {
+  cursor: not-allowed !important;
+}
+
+.btn[disabled] {
+  cursor: not-allowed !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+pie chart legend modified CSS
+------------------------------
+-----------------------------
+------------------------------*/
+
+.chartjs-legend ul {
+  flex-direction: column !important;
+}
+
+/*-----------------------------
+------------------------------
+------------------------------ 
+swiper CSS
+------------------------------
+-----------------------------
+------------------------------*/
+
+.custom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.custom-nav:hover {
+  background: #ff7a35; /* lighter shade */
+}
+
+.prev-btn {
+  left: -60px; 
+}
+
+.next-btn {
+  right: -60px;
+}

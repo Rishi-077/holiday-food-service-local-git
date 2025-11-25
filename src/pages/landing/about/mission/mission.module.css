@@ -1,0 +1,22 @@
+.mission_vector_bg {
+  background-color: #feeae2;
+  padding: 20px;
+  border-radius: 50%;
+  width: fit-content;
+}
+
+.mission_bg {
+  background-color: #feeae2;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.mission_img_div{
+  width: 100%;
+  height: auto;
+}
+
+.mission_img_div img{
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,39 @@
+.footer_section {
+  background-color: #1a1a1a;
+}
+
+.footer_social_icon {
+  background-color: var(--white);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal_line {
+  width: 110px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.footer_link {
+  color: var(--white);
+}
+
+.footer_link:hover {
+  color: var(--primary);
+}
+
+.logo_div{
+  width: 200px;
+  height: auto;
+}
+
+.logo_div img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

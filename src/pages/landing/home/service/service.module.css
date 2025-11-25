@@ -1,0 +1,77 @@
+.service_card {
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  position: relative;
+}
+
+.serive_img {
+  width: 100%;
+  height: auto;
+}
+
+.serive_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* .service_btn {
+  border: 1.5px solid var(--primary) !important;
+  color: var(--primary) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 10px 20px !important;
+  width: fit-content;
+}
+
+.service_btn:hover {
+  border: 1.5px solid var(--primary) !important;
+  color: var(--white) !important;
+  background-color: var(--primary) !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+} */
+
+.service_btn {
+  position: relative;
+  padding: 8px 15px;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease;
+  border-radius: 5px;
+}
+
+/* background fill element */
+.service_btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--primary);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 0;
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+/* on hover, expand fill from center to edges */
+.service_btn:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+/* text turns white on hover */
+.service_btn:hover {
+  color: var(--white);
+}
