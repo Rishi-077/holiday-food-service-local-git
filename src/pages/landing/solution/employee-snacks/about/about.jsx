@@ -10,7 +10,7 @@ function About() {
           <div className="row">
             <div className="col-lg-6 position-relative">
               <div className={`${styles.about_img_div}`}>
-                <img src={images.about_mission} alt="img" />
+                <img src={images.snack_sol} alt="img" />
               </div>
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4">

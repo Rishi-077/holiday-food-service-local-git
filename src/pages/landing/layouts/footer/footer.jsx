@@ -134,7 +134,7 @@ function Footer() {
               <div className="col-lg-3 col-12 d-flex justify-content-lg-center mt-lg-0 mt-4">
                 <div>
                   <div>
-                    <h4 className="white-text mb-1">Solutions</h4>
+                    <h4 className="white-text mb-1">Contacts</h4>
                     <div className={styles.horizontal_line}></div>
                   </div>
                   <ul className="ms-0 ps-0 mt-4">
@@ -149,16 +149,31 @@ function Footer() {
                         +91 96299 95000, 73977 85070
                       </a>
                     </li>
-                    <li className="list-remove mb-3 d-flex align-items-start">
+                    <li className="list-remove mb-3 d-flex align-items-start justify-content-start">
                       <div>
                         <MdOutlineMailOutline className="text-warning me-3" />
                       </div>
-                      <a
-                        href="#"
-                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
-                      >
-                        holidayfoodservices@gmail.com
-                      </a>
+                      <div>
+                        <div>
+                          <a
+                            href="#"
+                            className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                          >
+                            gm@holidayresidency.com
+                          </a>
+                          <span className="white-text">,</span>
+                          {"\u00A0 "}
+                        </div>
+
+                        <div>
+                          <a
+                            href="#"
+                            className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                          >
+                            sales@holidayresidency.com
+                          </a>
+                        </div>
+                      </div>
                     </li>
                     <li className="list-remove mb-3 d-flex align-items-start">
                       <div>

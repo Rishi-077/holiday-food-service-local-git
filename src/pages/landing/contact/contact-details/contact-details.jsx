@@ -25,7 +25,10 @@ function ContactDetails() {
                       </span>
                       Phone
                     </h6>
-                    <p className="fs-14 fw-400 dark-text">(0422) 123-4567</p>
+                    <p className="fs-14 fw-400 dark-text">
+                      {" "}
+                      +91 96299 95000, 73977 85070
+                    </p>
                   </div>
 
                   <div>
@@ -36,7 +39,7 @@ function ContactDetails() {
                       Email
                     </h6>
                     <p className="fs-14 fw-400 dark-text">
-                      hello@coimbatorecaters.com
+                      gm@holidayresidency.com, sales@holidayresidency.com
                     </p>
                   </div>
 
@@ -48,7 +51,8 @@ function ContactDetails() {
                       Location
                     </h6>
                     <p className="fs-14 fw-400 dark-text">
-                      Coimbatore, Tamil Nadu, India
+                      346, Thudiyalur Rd, Saravanampatti, Coimbatore,
+                      Tamilnadu-641035, India
                     </p>
                   </div>
                 </div>
