@@ -1,12 +1,14 @@
-import React, { use } from "react";
 import styles from "./client.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import images from "../../../../constants/images";
 import useScreenWidth from "../../../../hooks/useScreenWidth";
+import { useState } from "react";
 function Client() {
   const width = useScreenWidth();
+
+  const [tab, setTab] = useState("employee_choice");
   return (
     <section
       className={`${styles.client_section} container-fluid overflow-x-hidden`}
@@ -99,22 +101,50 @@ function Client() {
               <div className="col-lg-5">
                 <div>
                   <h4 className="fw-500 fs-20">
-                    Two convenient ways to order our corporate catering
-                    services:
+                    Corporate Catering, Simplified
                   </h4>
                   <div className="mt-5">
-                    <h5 className="fs-20 fw-500 py-2">Choose how you order:</h5>
-                    <h5 className="fs-20 fw-400 primary-text py-2">
-                      Meals chosen by your Team
+                    <h5 className="fs-20 fw-500 py-2">
+                      We offer two flexible approaches to workplace dining:
                     </h5>
-                    <h5 className="fs-20 fw-400 py-2">
-                      Meals Planned by Our experts
+                    <h5
+                      className={`fs-20 fw-400 cursor-pointer ${
+                        tab == "employee_choice" ? "primary-text" : "black-text"
+                      } py-2`}
+                      onClick={() => setTab("employee_choice")}
+                    >
+                      <span className="fw-500">Employee Choice:</span> Empower
+                      your team to select meals tailored to their individual
+                      preferences.
                     </h5>
                     <div
                       style={{
                         width: "70%",
                         height: "3px",
-                        backgroundColor: "var(--primary)",
+                        backgroundColor:
+                          tab == "employee_choice"
+                            ? "var(--primary)"
+                            : "transparent",
+                      }}
+                    ></div>
+                    <h5
+                      className={`fs-20 fw-400 cursor-pointer ${
+                        tab == "expert_curation" ? "primary-text" : "black-text"
+                      } py-2`}
+                      onClick={() => setTab("expert_curation")}
+                    >
+                      <span className="fw-500">Expert Curation:</span> Let our
+                      culinary specialists design the ideal menu for your
+                      organization.
+                    </h5>
+                    <div
+                      style={{
+                        width: "70%",
+                        height: "3px",
+                        backgroundColor:
+                          tab == "expert_curation"
+                            ? "var(--primary)"
+                            : "transparent",
                       }}
                     ></div>
 
@@ -124,89 +154,152 @@ function Client() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-7 mt-lg-0 mt-5">
-                <div className="d-flex align-items-start">
-                  <div className="d-flex align-items-center flex-column justify-content-start me-4">
-                    <div>
-                      <img
-                        src={images.TBD_1}
-                        alt="img
-                    "
-                      />
+              {tab == "employee_choice" && (
+                <div className="col-lg-7 mt-lg-0 mt-5">
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_1} alt="img" />
+                      </div>
+                      <div
+                        style={{
+                          width: 3,
+                          height: "150px",
+                          backgroundColor: "#EAEAEB",
+                        }}
+                      ></div>
                     </div>
-                    <div
-                      style={{
-                        width: 3,
-                        height: "150px",
-                        backgroundColor: "#EAEAEB",
-                      }}
-                    ></div>
-                  </div>
-                  <div>
-                    <h4 className={`${styles.client_h4} fs-20 fw-500`}>
-                      Set your schedule and budget
-                    </h4>
-                    <p className={`${styles.client_p} fs-16`}>
-                      Set your meal schedule and subsidy amounts and invite your
-                      team members to join your group. Team admins can segment
-                      your staff into different groups and track order details.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-start">
-                  <div className="d-flex align-items-center flex-column justify-content-start me-4">
                     <div>
-                      <img
-                        src={images.TBD_2}
-                        alt="img
-                    "
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: 3,
-                        height: "150px",
-                        backgroundColor: "#EAEAEB",
-                      }}
-                    ></div>
-                  </div>
-                  <div>
-                    <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
-                      Let your team select and customize their meals
-                    </h4>
-                    <p className={`${styles.client_p} fs-16`}>
-                      Team members can place their orders for the week all at
-                      once, or wait until the night before to make each
-                      selection. We’ll plan different restaurants and corporate
-                      caterers for every meal and curate menus with options for
-                      every dietary preference.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-start">
-                  <div className="d-flex align-items-center flex-column justify-content-start me-4">
-                    <div>
-                      <img
-                        src={images.TBD_3}
-                        alt="img
-                    "
-                      />
+                      <h4 className={`${styles.client_h4} fs-20 fw-500`}>
+                        Set your schedule and budget
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Establish your meal schedule and set subsidy parameters
+                        with ease. Administrators gain full visibility into
+                        spending patterns and order analytics through real-time
+                        tracking.
+                      </p>
                     </div>
                   </div>
-                  <div>
-                    <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
-                      Enjoy personalized meals with streamlined delivery
-                    </h4>
-                    <p className={`${styles.client_p} fs-16`}>
-                      Meals are individually wrapped and labeled with employee
-                      names and organized so they’re easy to find for quick and
-                      convenient grab-n-go. Our restaurants and corporate
-                      caterers organize delivery and set up your team’s meals in
-                      a designated space in your office.
-                    </p>
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_2} alt="img" />
+                      </div>
+                      <div
+                        style={{
+                          width: 3,
+                          height: "150px",
+                          backgroundColor: "#EAEAEB",
+                        }}
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
+                        Let your team select and customize their menu
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Whether planning meals for the week ahead or ordering
+                        the day before, your employees enjoy complete
+                        flexibility. Our comprehensive menus accommodate all
+                        dietary preferences and restrictions.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_3} alt="img" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
+                        Seamless Delivery & Organization
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Eliminate lunchtime disruption. Each meal arrives
+                        individually packaged and professionally organized. Our
+                        dedicated delivery team arranges everything in your
+                        designated space for an efficient grab-and-go
+                        experience.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
+              {tab == "expert_curation" && (
+                <div className="col-lg-7 mt-lg-0 mt-5">
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_1} alt="img" />
+                      </div>
+                      <div
+                        style={{
+                          width: 3,
+                          height: "150px",
+                          backgroundColor: "#EAEAEB",
+                        }}
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 className={`${styles.client_h4} fs-20 fw-500`}>
+                        Provide Your Requirements
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Share your budget, headcount, and any dietary
+                        considerations. Whether you need ongoing daily service
+                        or a single event, our platform retains your "Taste
+                        Profile" to ensure consistent quality with every order.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_2} alt="img" />
+                      </div>
+                      <div
+                        style={{
+                          width: 3,
+                          height: "150px",
+                          backgroundColor: "#EAEAEB",
+                        }}
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
+                        Experience Chef-Curated Variety
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Eliminate menu fatigue with rotating selections designed
+                        by our expert culinary team. Every menu addresses
+                        diverse dietary needs and preferences while maintaining
+                        exceptional quality and variety.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-start">
+                    <div className="d-flex align-items-center flex-column justify-content-start me-4">
+                      <div>
+                        <img src={images.TBD_3} alt="img" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className={`${styles.client_h4}  fs-20 fw-500`}>
+                        Seamless Delivery & Organization
+                      </h4>
+                      <p className={`${styles.client_p} fs-16`}>
+                        Eliminate lunchtime disruption. Each meal arrives
+                        individually packaged and professionally organized. Our
+                        dedicated delivery team arranges everything in your
+                        designated space for an efficient grab-and-go
+                        experience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

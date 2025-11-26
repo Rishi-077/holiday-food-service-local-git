@@ -69,15 +69,53 @@ function Navbar() {
 
                   <li>
                     <div className={`${styles.dropdown}`}>
-                      <div className={styles.dropbtn}>
+                      <div
+                        className={`${styles.dropbtn} ${
+                          location.pathname.includes("/solution") &&
+                          "primary-text"
+                        }`}
+                      >
                         Our Solutions <IoChevronDown />
                       </div>
                       <div className={styles.dropdown_content}>
                         <a href="#">Corporate Food Service</a>
-                        <a href="#">Boxed Meal</a>
-                        <a href="#">Catered Events & Celebrations</a>
-                        <a href="#">Family Style Catering</a>
-                        <a href="#">Employee Snack Boxes</a>
+                        <Link
+                          to="/solution/boxed-meal"
+                          className={`${
+                            location.pathname === "/solution/boxed-meal" &&
+                            "primary-text"
+                          }`}
+                        >
+                          Boxed Meal
+                        </Link>
+                        <Link
+                          to="/solution/event-caters"
+                          className={`${
+                            location.pathname === "/solution/event-caters" &&
+                            "primary-text"
+                          }`}
+                        >
+                          Catered Events & Celebrations
+                        </Link>
+                        <Link
+                          to="/solution/family-style-catering"
+                          className={`${
+                            location.pathname ===
+                              "/solution/family-style-catering" &&
+                            "primary-text"
+                          }`}
+                        >
+                          Family Style Catering
+                        </Link>
+                        <Link
+                          to="/solution/employee-snacks"
+                          className={`${
+                            location.pathname === "/solution/employee-snacks" &&
+                            "primary-text"
+                          }`}
+                        >
+                          Employee Snack Boxes{" "}
+                        </Link>
                         <a href="#">Executive Dining</a>
                       </div>
                     </div>
@@ -144,10 +182,42 @@ function Navbar() {
                     </summary>
                     <div className={styles.mobile_dropdown}>
                       <a href="#">Corporate Food Service</a>
-                      <a href="#">Boxed Meal</a>
-                      <a href="#">Catered Events & Celebrations</a>
-                      <a href="#">Family Style Catering</a>
-                      <a href="#">Employee Snack Boxes</a>
+                      <Link
+                        to="/solution/boxed-meal"
+                        className={`${
+                          location.pathname === "/solution/boxed-meal" &&
+                          "primary-text"
+                        }`}
+                      >
+                        Boxed Meal
+                      </Link>
+                      <Link
+                        to="/solution/event-caters"
+                        className={`${
+                          location.pathname === "/solution/event-caters" &&
+                          "primary-text"
+                        }`}
+                      >
+                        Catered Events & Celebrations
+                      </Link>
+                      <Link
+                        to="/solution/family-style-catering"
+                        className={`${
+                          location.pathname ===
+                            "/solution/family-style-catering" && "primary-text"
+                        }`}
+                      >
+                        Family Style Catering
+                      </Link>
+                      <Link
+                        to="/solution/employee-snacks"
+                        className={`${
+                          location.pathname === "/solution/employee-snacks" &&
+                          "primary-text"
+                        }`}
+                      >
+                        Employee Snack Boxes{" "}
+                      </Link>
                       <a href="#">Executive Dining</a>
                     </div>
                   </details>

@@ -23,7 +23,7 @@ function Landing() {
       clearTimeout(stopTimeout);
     };
   }, [location.pathname]);
-
+  
   return (
     <>
       <ScrollToTop />
@@ -46,4 +46,3 @@ function Landing() {
 }
 
 export default Landing;
-
