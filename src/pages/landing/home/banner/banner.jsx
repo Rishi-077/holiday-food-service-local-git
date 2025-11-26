@@ -69,7 +69,7 @@ function Banner() {
               Premium Food Services for Every <br />
               Celebration
             </h1>
-            <p className={`${styles.home_p} fw-400 text-center my-4`}>
+            <p className={`${styles.home_p} fw-400 text-center my-4 poppins`}>
               From Corporate Events To Holiday Gatherings, We Bring People
               Together With Exceptional Food
             </p>

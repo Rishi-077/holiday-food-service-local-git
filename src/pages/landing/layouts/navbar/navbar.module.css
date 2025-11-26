@@ -162,6 +162,7 @@
   color: var(--black);
   text-decoration: none;
   font-size: 16px;
+  display: block;
 }
 
 /* Mobile dropdown inside menu */
@@ -175,7 +176,7 @@ summary {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 16px !important;
   padding: 12px 20px;
 }
 

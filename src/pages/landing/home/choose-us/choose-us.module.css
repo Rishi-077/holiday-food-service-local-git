@@ -15,11 +15,11 @@
   height: auto;
 }
 
-.choose_us_section {
+/* .choose_us_section {
   padding-top: 250px !important;
   z-index: 2 !important;
-}
-
+} */
+/* 
 @media screen and (max-width: 768px) {
   .choose_us_section {
     padding-top: 150px !important;
@@ -30,4 +30,4 @@
   .choose_us_section {
     padding-top: 100px !important;
   }
-}
+} */

@@ -9,9 +9,9 @@ function Home() {
   return (
     <>
       <Banner />
+      <Service />
       <ChooseUs />
       <Client />
-      <Service />
       <Offer />
       <ContactForm />
       <Review />

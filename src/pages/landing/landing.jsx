@@ -7,7 +7,8 @@ import Footer from "./layouts/footer/footer";
 import About from "./about/about";
 import Contact from "./contact/contact";
 import ScrollToTop from "../../hooks/ScrollToTop";
-import Loader from "../../components/loading/loading";
+import Loader from "../../components/loading/Loading";
+import Solution from "./solution/solution";
 
 function Landing() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function Landing() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact-us" element={<Contact />} />
+          <Route path="solution/*" element={<Solution />} />
         </Routes>
       )}
 
@@ -44,4 +46,3 @@ function Landing() {
 }
 
 export default Landing;
-

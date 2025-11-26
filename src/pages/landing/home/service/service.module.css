@@ -75,3 +75,20 @@
 .service_btn:hover {
   color: var(--white);
 }
+
+.service_section {
+  padding-top: 250px !important;
+  z-index: 2 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .service_section {
+    padding-top: 150px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service_section {
+    padding-top: 100px !important;
+  }
+}

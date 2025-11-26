@@ -2,8 +2,8 @@ import styles from "./navbar.module.css";
 import images from "../../../../constants/images";
 import { IoChevronDown } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { use, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -13,6 +13,8 @@ import {
 import { GrLocation } from "react-icons/gr";
 
 function Navbar() {
+  const location = useLocation();
+  console.log(location);
   const [moveDown, setMoveDown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -45,10 +47,24 @@ function Navbar() {
               <div className={`${styles.desktop_menu}`}>
                 <ul className={`${styles.nav_ul}`}>
                   <li>
-                    <Link to="/">Home</Link>
+                    <Link
+                      to="/"
+                      className={`${
+                        location.pathname === "/" && "primary-text"
+                      }`}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/about">About Us</Link>
+                    <Link
+                      to="/about"
+                      className={`${
+                        location.pathname === "/about" && "primary-text"
+                      }`}
+                    >
+                      About Us
+                    </Link>
                   </li>
 
                   <li>
@@ -68,7 +84,14 @@ function Navbar() {
                   </li>
 
                   <li>
-                    <Link to="/contact-us">Contact Us</Link>
+                    <Link
+                      to="/contact-us"
+                      className={`${
+                        location.pathname === "/contact-us" && "primary-text"
+                      }`}
+                    >
+                      Contact Us
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -95,11 +118,23 @@ function Navbar() {
             <div className={styles.mobile_menu}>
               <ul>
                 <li onClick={() => setMenuOpen(false)}>
-                  <Link to="/">Home</Link>
+                  <Link
+                    to="/"
+                    className={`${location.pathname === "/" && "primary-text"}`}
+                  >
+                    Home
+                  </Link>
                 </li>
 
                 <li onClick={() => setMenuOpen(false)}>
-                  <Link to="/about">About Us</Link>
+                  <Link
+                    to="/about"
+                    className={`${
+                      location.pathname === "/about" && "primary-text"
+                    }`}
+                  >
+                    About Us
+                  </Link>
                 </li>
 
                 <li>
@@ -108,18 +143,25 @@ function Navbar() {
                       Our Solutions <IoChevronDown />
                     </summary>
                     <div className={styles.mobile_dropdown}>
-                       <a href="#">Corporate Food Service</a>
-                        <a href="#">Boxed Meal</a>
-                        <a href="#">Catered Events & Celebrations</a>
-                        <a href="#">Family Style Catering</a>
-                        <a href="#">Employee Snack Boxes</a>
-                        <a href="#">Executive Dining</a>
+                      <a href="#">Corporate Food Service</a>
+                      <a href="#">Boxed Meal</a>
+                      <a href="#">Catered Events & Celebrations</a>
+                      <a href="#">Family Style Catering</a>
+                      <a href="#">Employee Snack Boxes</a>
+                      <a href="#">Executive Dining</a>
                     </div>
                   </details>
                 </li>
 
                 <li onClick={() => setMenuOpen(false)}>
-                  <Link to="/contact-us">Contact Us</Link>
+                  <Link
+                    to="/contact-us"
+                    className={`${
+                      location.pathname === "/contact-us" && "primary-text"
+                    }`}
+                  >
+                    Contact Us
+                  </Link>
                 </li>
 
                 <li>
