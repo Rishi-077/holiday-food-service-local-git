@@ -34,6 +34,12 @@ import solution_executive from "../assets/images/solution_executive.png";
 import service_1 from "../assets/images/service_1.png";
 import quote_banner from "../assets/images/quote_banner.png";
 import client_side_img from "../assets/images/client_side_img.png";
+import tick from "../assets/images/solution/tick.png";
+import group_img from "../assets/images/solution/group_img.png";
+import boxed_sol from "../assets/images/solution/boxed_sol.png";
+import event_sol from "../assets/images/solution/event_sol.png";
+import family_sol from "../assets/images/solution/family_sol.png";
+import snack_sol from "../assets/images/solution/snack_sol.png";
 
 // about
 
@@ -81,6 +87,12 @@ const images = {
   solution_snacks,
   solution_executive,
   client_side_img,
+  tick,
+  group_img,
+  family_sol,
+  boxed_sol,
+  event_sol,
+  snack_sol,
 
   // about
 
