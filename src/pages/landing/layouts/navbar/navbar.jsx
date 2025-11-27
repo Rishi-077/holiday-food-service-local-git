@@ -3,7 +3,7 @@ import images from "../../../../constants/images";
 import { IoChevronDown } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { use, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -14,6 +14,7 @@ import { GrLocation } from "react-icons/gr";
 
 function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [moveDown, setMoveDown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -77,9 +78,11 @@ function Navbar() {
                         Our Solutions <IoChevronDown />
                       </div>
                       <div className={styles.dropdown_content}>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/corporate-food-service"
+                        <a
+                          onClick={() => {
+                            navigate("/solution/corporate-food-service");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname ===
                               "/solution/corporate-food-service" &&
@@ -87,30 +90,36 @@ function Navbar() {
                           }`}
                         >
                           Corporate Food Service
-                        </Link>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/boxed-meal"
+                        </a>
+                        <a
+                          onClick={() => {
+                            navigate("/solution/boxed-meal");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname === "/solution/boxed-meal" &&
                             "primary-text"
                           }`}
                         >
                           Boxed Meal
-                        </Link>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/event-caters"
+                        </a>
+                        <a
+                          onClick={() => {
+                            navigate("/solution/event-caters");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname === "/solution/event-caters" &&
                             "primary-text"
                           }`}
                         >
                           Catered Events & Celebrations
-                        </Link>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/family-style-catering"
+                        </a>
+                        <a
+                          onClick={() => {
+                            navigate("/solution/family-style-catering");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname ===
                               "/solution/family-style-catering" &&
@@ -118,27 +127,31 @@ function Navbar() {
                           }`}
                         >
                           Family Style Catering
-                        </Link>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/employee-snacks"
+                        </a>
+                        <a
+                          onClick={() => {
+                            navigate("/solution/employee-snacks");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname === "/solution/employee-snacks" &&
                             "primary-text"
                           }`}
                         >
                           Employee Snack Boxes{" "}
-                        </Link>
-                        <Link
-                          onClick={() => window.location.reload()}
-                          to="/solution/executive-dining"
+                        </a>
+                        <a
+                          onClick={() => {
+                            navigate("/solution/executive-dining");
+                            window.location.reload();
+                          }}
                           className={`${
                             location.pathname ===
                               "/solution/executive-dining" && "primary-text"
                           }`}
                         >
                           Executive Dining
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </li>
@@ -203,85 +216,85 @@ function Navbar() {
                       Our Solutions <IoChevronDown />
                     </summary>
                     <div className={styles.mobile_dropdown}>
-                      <Link
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/corporate-food-service");
                           window.location.reload();
                         }}
-                        to="/solution/corporate-food-service"
                         className={`${
                           location.pathname ===
                             "/solution/corporate-food-service" && "primary-text"
                         }`}
                       >
                         Corporate Food Service
-                      </Link>
+                      </a>
 
-                      <Link
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/boxed-meal");
                           window.location.reload();
                         }}
-                        to="/solution/boxed-meal"
                         className={`${
                           location.pathname === "/solution/boxed-meal" &&
                           "primary-text"
                         }`}
                       >
                         Boxed Meal
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/event-caters");
                           window.location.reload();
                         }}
-                        to="/solution/event-caters"
                         className={`${
                           location.pathname === "/solution/event-caters" &&
                           "primary-text"
                         }`}
                       >
                         Catered Events & Celebrations
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/family-style-catering");
                           window.location.reload();
                         }}
-                        to="/solution/family-style-catering"
                         className={`${
                           location.pathname ===
                             "/solution/family-style-catering" && "primary-text"
                         }`}
                       >
                         Family Style Catering
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/employee-snacks");
                           window.location.reload();
                         }}
-                        to="/solution/employee-snacks"
                         className={`${
                           location.pathname === "/solution/employee-snacks" &&
                           "primary-text"
                         }`}
                       >
                         Employee Snack Boxes{" "}
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         onClick={() => {
                           setMenuOpen(false);
+                          navigate("/solution/executive-dining");
                           window.location.reload();
                         }}
-                        to="/solution/executive-dining"
                         className={`${
                           location.pathname === "/solution/executive-dining" &&
                           "primary-text"
                         }`}
                       >
                         Executive Dining
-                      </Link>
+                      </a>
                     </div>
                   </details>
                 </li>
