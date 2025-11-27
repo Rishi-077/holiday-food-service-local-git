@@ -78,7 +78,9 @@ function Navbar() {
                         Our Solutions <IoChevronDown />
                       </div>
                       <div className={styles.dropdown_content}>
-                        <a href="#">Corporate Food Service</a>
+                        <a href="#" style={{ color: "var(--gray)" }}>
+                          Corporate Food Service
+                        </a>
                         <Link
                           to="/solution/boxed-meal"
                           className={`${
@@ -116,7 +118,9 @@ function Navbar() {
                         >
                           Employee Snack Boxes{" "}
                         </Link>
-                        <a href="#">Executive Dining</a>
+                        <a href="#" style={{ color: "var(--gray)" }}>
+                          Executive Dining
+                        </a>
                       </div>
                     </div>
                   </li>
@@ -181,7 +185,9 @@ function Navbar() {
                       Our Solutions <IoChevronDown />
                     </summary>
                     <div className={styles.mobile_dropdown}>
-                      <a href="#">Corporate Food Service</a>
+                      <a href="#" style={{ color: "var(--gray)" }}>
+                        Corporate Food Service
+                      </a>
                       <Link
                         to="/solution/boxed-meal"
                         className={`${
@@ -218,7 +224,9 @@ function Navbar() {
                       >
                         Employee Snack Boxes{" "}
                       </Link>
-                      <a href="#">Executive Dining</a>
+                      <a href="#" style={{ color: "var(--gray)" }}>
+                        Executive Dining
+                      </a>
                     </div>
                   </details>
                 </li>

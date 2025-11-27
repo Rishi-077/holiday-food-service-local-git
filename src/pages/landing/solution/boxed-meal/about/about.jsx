@@ -26,8 +26,8 @@ function About() {
                   meal is individually packaged, labeled, and ready to enjoy.
                 </p>
 
-                <button className="btn primary-bg shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4">
-                  Request a Demo
+                <button className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4">
+                  Get in Touch
                 </button>
               </div>
 
