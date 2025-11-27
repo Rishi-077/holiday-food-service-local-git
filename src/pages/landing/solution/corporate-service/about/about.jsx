@@ -10,22 +10,27 @@ function About() {
           <div className="row">
             <div className="col-lg-6 position-relative">
               <div className={`${styles.about_img_div}`}>
-                <img src={images.family_sol} alt="img" />
+                <img src={images.corporate_sol} alt="img" />
               </div>
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4">
               <div>
                 {/* <h5 className="poppins primary-text text-start">
-                  Family Style Catering
+                  Corporate Food Service
                 </h5> */}
                 <h2 className="poppins black-text text-start">
-                  Communal dining experience with shared platters
+                  The Future of Workplace Dining
                 </h2>
                 <p className="fs-15 fw-400 poppins dark-text">
-                  Family-style catering creates a warm, communal dining
-                  experience where your team shares delicious food together.
-                  It's perfect for building connections and fostering
-                  collaboration.
+                  In today's competitive environment, fueling your employees is
+                  key to productivity and retention. Our Corporate Food Services
+                  provide a regular, scheduled, and reliable supply of
+                  high-quality meals (Breakfast, Lunch, and Dinner) designed to
+                  integrate seamlessly into your company's schedule and culture.
+                  <br />
+                  <br />
+                  We move beyond generic catering, offering solutions that
+                  maximize choice and simplify administration.
                 </p>
 
                 <button className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4">
@@ -49,27 +54,31 @@ function About() {
                               alt="img"
                               className="me-2"
                             />{" "}
-                            Team Celebrations
+                            Boost Culture & Retention
                           </p>
                           <p>
                             <img src={images.tick} alt="img" className="me-2" />
-                            Quarterly meetings
+                            Guaranteed Safety & Wellness
                           </p>
                           <p>
                             <img src={images.tick} alt="img" className="me-2" />
-                            Workshop lunches
+                            Maximum Administrative Efficiency
                           </p>
                         </div>
-                        <div className="ms-sm-4 ms-0">
+                        {/* <div className="ms-sm-4 ms-0">
                           <p>
                             <img src={images.tick} alt="img" className="me-2" />
-                            Quarterly meetings
+                            Training sessions
                           </p>
                           <p>
                             <img src={images.tick} alt="img" className="me-2" />
-                            Client entertainment
+                            Outdoor events
                           </p>
-                        </div>
+                          <p>
+                            <img src={images.tick} alt="img" className="me-2" />
+                            Site visits
+                          </p>
+                        </div> */}
                       </div>
                     </div>
                   </div>

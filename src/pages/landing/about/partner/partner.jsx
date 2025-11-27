@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./partner.module.css";
 
 function Partner() {
+  const navigate = useNavigate();
   return (
     <section className={`${styles.partner_section} container-fluid py-5`}>
       <div className="row">
@@ -17,7 +19,11 @@ function Partner() {
                       joining our network? We're always looking for quality
                       partners who share our commitment to excellence.
                     </p>
-                    <button className={`btn ${styles.partner_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() => navigate("/contact-us")}
+                      className={`btn ${styles.partner_btn}`}
+                    >
                       Get in Touch
                     </button>
                   </div>

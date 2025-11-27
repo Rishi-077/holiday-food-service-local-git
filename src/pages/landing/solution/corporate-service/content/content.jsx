@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./content.module.css";
-import images from "../../../../../constants/images";
 
 function Content() {
   return (
@@ -13,9 +12,7 @@ function Content() {
 
             <div className="col-12 mt-3">
               <div>
-                <h2 className="poppins black-text text-start">
-                  Why Choose Us For Events?
-                </h2>
+                <h2 className="poppins black-text text-start">Key Features:</h2>
                 <div className="row poppins">
                   <div className="col-12 my-3">
                     <ul>
@@ -23,10 +20,13 @@ function Content() {
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
                             {" "}
-                            Custom Event Menus :
+                            The Power of Choice :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Designed specifically for your occasion and guests
+                            We believe great corporate food should offer
+                            flexibility. We offer two distinct, powerful
+                            approaches to workplace dining, both backed by
+                            reliable service and centralized analytics.
                           </span>
                         </div>
                         <div
@@ -41,10 +41,12 @@ function Content() {
                       <li>
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
-                            Professional Staffing :
+                            Individualized Empowerment :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Servers, bartenders, and event coordinators
+                            Maximize personal satisfaction. Employees select
+                            meals tailored to their individual preferences and
+                            dietary needs from our vetted restaurant network.
                           </span>
                         </div>
                         <div
@@ -59,48 +61,13 @@ function Content() {
                       <li>
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
-                            Bar Service Available :
+                            Streamlined Group Service :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Full bar, wine service, or signature cocktails
-                          </span>
-                        </div>
-                        <div
-                          style={{
-                            backgroundColor: "#ECEDF1",
-                            height: "2px",
-                            width: "40%",
-                            marginTop: "15px",
-                          }}
-                        ></div>
-                      </li>
-                      <li>
-                        <div className="mt-3">
-                          <span className="fs-15 fw-500">
-                            {" "}
-                            Equipment Rental :
-                          </span>{" "}
-                          <span className="fs-15 dark-text">
-                            Tables, chairs, linens, and decor
-                          </span>
-                        </div>
-                        <div
-                          style={{
-                            backgroundColor: "#ECEDF1",
-                            height: "2px",
-                            width: "40%",
-                            marginTop: "15px",
-                          }}
-                        ></div>
-                      </li>
-                      <li>
-                        <div className="mt-3">
-                          <span className="fs-15 fw-500">
-                            {" "}
-                            Day-of Coordination :
-                          </span>{" "}
-                          <span className="fs-15 dark-text">
-                            We manage all details so you can enjoy your event
+                            Simplify planning for high-volume needs. Our
+                            culinary specialists design a constantly rotating,
+                            ideal menu for your organization, compliant with all
+                            group restrictions.
                           </span>
                         </div>
                         <div
@@ -118,18 +85,10 @@ function Content() {
               </div>
             </div>
 
-            {/* image */}
-
-            <div className="col-12">
-              <div className={`${styles.group_img_div}`}>
-                <img src={images.group_img} alt="img" />
-              </div>
-            </div>
-
             {/* Commitments */}
             <div className="col-12 my-3">
               <div>
-                <h2 className="poppins black-text text-start">Menu Options</h2>
+                <h2 className="poppins black-text text-start">Perfect For:</h2>
                 <div className="row poppins">
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -139,10 +98,9 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Corporate Parties</h6>
+                    <h6 className="my-3">Regular Morning Breakfast</h6>
                     <p className="poppins fs-15 fw-400 mt-3">
-                      Year-end celebrations, milestone achievements, and company
-                      anniversaries
+                      Quick, energizing, and easily customizable
                     </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
@@ -153,9 +111,9 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3 my-3">Team Celebrations</h6>
+                    <h6 className="my-3 my-3">Afternoon Curated Meals</h6>
                     <p className="poppins fs-15 fw-400 mt-3">
-                      Project completions, promotions, and team victories
+                      Balanced, high-quality group meals
                     </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
@@ -166,9 +124,10 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">International Cuisine</h6>
+                    <h6 className="my-3">Evening Snacks</h6>
                     <p className="poppins fs-15 fw-400 mt-3">
-                      Project completions, promotions, and team victories
+                      Light, fresh options for training sessions or working
+                      late.
                     </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
@@ -179,9 +138,10 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Outdoor Gatherings</h6>
+                    <h6 className="my-3">Working Dinner</h6>
                     <p className="poppins fs-15 fw-400 mt-3">
-                      Picnics, sports days, and team outings
+                      Full, hot meals designed to support late-night
+                      productivity.
                     </p>
                   </div>
                 </div>

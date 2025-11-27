@@ -15,8 +15,8 @@ function About() {
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4">
               <div>
-                <h5 className="forum primary-text text-start">Boxed Meal</h5>
-                <h2 className="forum black-text text-start">
+                {/* <h5 className="poppins primary-text text-start">Boxed Meal</h5> */}
+                <h2 className="poppins black-text text-start">
                   Individually packaged meals perfect for meetings and busy
                   workdays
                 </h2>
@@ -36,7 +36,7 @@ function About() {
                   <div className="col-3 d-lg-block d-none">&nbsp;</div>
                   <div className="col-lg-9 col-12">
                     <div>
-                      <h5 className="forum black-text text-start">Benifits</h5>
+                      <h5 className="poppins black-text text-start">Benifits</h5>
 
                       <div className="d-flex flex-sm-row flex-column align-items-start justify-content-between mt-3 gap-sm-4 gap-0 poppins">
                         <div>

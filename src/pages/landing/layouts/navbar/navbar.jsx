@@ -14,7 +14,6 @@ import { GrLocation } from "react-icons/gr";
 
 function Navbar() {
   const location = useLocation();
-  console.log(location);
   const [moveDown, setMoveDown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -78,10 +77,19 @@ function Navbar() {
                         Our Solutions <IoChevronDown />
                       </div>
                       <div className={styles.dropdown_content}>
-                        <a href="#" style={{ color: "var(--gray)" }}>
-                          Corporate Food Service
-                        </a>
                         <Link
+                          onClick={() => window.location.reload()}
+                          to="/solution/corporate-food-service"
+                          className={`${
+                            location.pathname ===
+                              "/solution/corporate-food-service" &&
+                            "primary-text"
+                          }`}
+                        >
+                          Corporate Food Service
+                        </Link>
+                        <Link
+                          onClick={() => window.location.reload()}
                           to="/solution/boxed-meal"
                           className={`${
                             location.pathname === "/solution/boxed-meal" &&
@@ -91,6 +99,7 @@ function Navbar() {
                           Boxed Meal
                         </Link>
                         <Link
+                          onClick={() => window.location.reload()}
                           to="/solution/event-caters"
                           className={`${
                             location.pathname === "/solution/event-caters" &&
@@ -100,6 +109,7 @@ function Navbar() {
                           Catered Events & Celebrations
                         </Link>
                         <Link
+                          onClick={() => window.location.reload()}
                           to="/solution/family-style-catering"
                           className={`${
                             location.pathname ===
@@ -110,6 +120,7 @@ function Navbar() {
                           Family Style Catering
                         </Link>
                         <Link
+                          onClick={() => window.location.reload()}
                           to="/solution/employee-snacks"
                           className={`${
                             location.pathname === "/solution/employee-snacks" &&
@@ -118,9 +129,16 @@ function Navbar() {
                         >
                           Employee Snack Boxes{" "}
                         </Link>
-                        <a href="#" style={{ color: "var(--gray)" }}>
+                        <Link
+                          onClick={() => window.location.reload()}
+                          to="/solution/executive-dining"
+                          className={`${
+                            location.pathname ===
+                              "/solution/executive-dining" && "primary-text"
+                          }`}
+                        >
                           Executive Dining
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </li>
@@ -139,11 +157,11 @@ function Navbar() {
               </div>
 
               {/* Desktop Sign In Button */}
-              <div className={`${styles.desktop_menu}`}>
+              {/* <div className={`${styles.desktop_menu}`}>
                 <button type="button" className={styles.signin_btn}>
                   Sign In
                 </button>
-              </div>
+              </div> */}
 
               {/* Hamburger Icon */}
               <div
@@ -185,10 +203,25 @@ function Navbar() {
                       Our Solutions <IoChevronDown />
                     </summary>
                     <div className={styles.mobile_dropdown}>
-                      <a href="#" style={{ color: "var(--gray)" }}>
-                        Corporate Food Service
-                      </a>
                       <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
+                        to="/solution/corporate-food-service"
+                        className={`${
+                          location.pathname ===
+                            "/solution/corporate-food-service" && "primary-text"
+                        }`}
+                      >
+                        Corporate Food Service
+                      </Link>
+
+                      <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
                         to="/solution/boxed-meal"
                         className={`${
                           location.pathname === "/solution/boxed-meal" &&
@@ -198,6 +231,10 @@ function Navbar() {
                         Boxed Meal
                       </Link>
                       <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
                         to="/solution/event-caters"
                         className={`${
                           location.pathname === "/solution/event-caters" &&
@@ -207,6 +244,10 @@ function Navbar() {
                         Catered Events & Celebrations
                       </Link>
                       <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
                         to="/solution/family-style-catering"
                         className={`${
                           location.pathname ===
@@ -216,6 +257,10 @@ function Navbar() {
                         Family Style Catering
                       </Link>
                       <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
                         to="/solution/employee-snacks"
                         className={`${
                           location.pathname === "/solution/employee-snacks" &&
@@ -224,9 +269,19 @@ function Navbar() {
                       >
                         Employee Snack Boxes{" "}
                       </Link>
-                      <a href="#" style={{ color: "var(--gray)" }}>
+                      <Link
+                        onClick={() => {
+                          setMenuOpen(false);
+                          window.location.reload();
+                        }}
+                        to="/solution/executive-dining"
+                        className={`${
+                          location.pathname === "/solution/executive-dining" &&
+                          "primary-text"
+                        }`}
+                      >
                         Executive Dining
-                      </a>
+                      </Link>
                     </div>
                   </details>
                 </li>
@@ -242,9 +297,9 @@ function Navbar() {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <button className={styles.signin_btn}>Sign In</button>
-                </li>
+                </li> */}
                 <li className="d-md-none d-block">
                   <div className="row d-flex flex-column">
                     <div className="col-4">

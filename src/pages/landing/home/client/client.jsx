@@ -19,12 +19,12 @@ function Client() {
           <div className="container py-2">
             <div className="row">
               <div className="col-12">
-                <h5 className="forum primary-text text-center">Our Clients</h5>
-                <h2 className="forum black-text text-center">
+                {/* <h5 className="poppins primary-text text-center">Our Clients</h5> */}
+                <h2 className="poppins black-text text-center">
                   Our Trusted Clients
                 </h2>
               </div>
-              <div className="col-12">
+              {/* <div className="col-12">
                 <div>
                   <Swiper
                     slidesPerView={
@@ -90,6 +90,83 @@ function Client() {
                     </SwiperSlide>
                   </Swiper>
                 </div>
+              </div> */}
+
+              <div className="col-12">
+                <div className="row">
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_8} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_7} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_6} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_5} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_4} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_3} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_2} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 col-sm-6 col-12 my-3">
+                    <div className={`card ${styles.logo_card}`}>
+                      <div className="card-body">
+                        <div className={`${styles.client_logo_div}`}>
+                          <img src={images.company_1} alt="img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,7 +182,8 @@ function Client() {
                   </h4>
                   <div className="mt-5">
                     <h5 className="fs-20 fw-500 py-2">
-                      We offer two flexible approaches to workplace dining:
+                      We offer two flexible approaches to workplace dining.
+                      Choose how to order
                     </h5>
                     <h5
                       className={`fs-20 fw-400 cursor-pointer ${
@@ -113,9 +191,7 @@ function Client() {
                       } py-2`}
                       onClick={() => setTab("employee_choice")}
                     >
-                      <span className="fw-500">Employee Choice:</span> Empower
-                      your team to select meals tailored to their individual
-                      preferences.
+                      Meals Chosen by Your Team
                     </h5>
                     <div
                       style={{
@@ -133,9 +209,7 @@ function Client() {
                       } py-2`}
                       onClick={() => setTab("expert_curation")}
                     >
-                      <span className="fw-500">Expert Curation:</span> Let our
-                      culinary specialists design the ideal menu for your
-                      organization.
+                      Meals Planned by Our Experts
                     </h5>
                     <div
                       style={{

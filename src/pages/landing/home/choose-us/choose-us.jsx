@@ -11,10 +11,10 @@ function ChooseUs() {
           <div className="container py-2">
             <div className="row">
               <div className="col-12">
-                <h5 className="forum primary-text text-center">
+                {/* <h5 className="poppins primary-text text-center">
                   Why Choose Us
-                </h5>
-                <h2 className="forum black-text text-center">
+                </h5> */}
+                <h2 className="poppins black-text text-center">
                   Why Choose Holiday Food Service
                 </h2>
                 <div className="mt-4 poppins">

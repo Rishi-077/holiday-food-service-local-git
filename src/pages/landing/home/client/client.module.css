@@ -41,16 +41,21 @@
   height: auto;
 }
 
-.client_side_img_div{
+.client_side_img_div {
   width: 80%;
   height: auto;
   margin-top: 20px;
 }
 
-.client_side_img_div img{
+.client_side_img_div img {
   width: 100%;
-  height: auto; 
+  height: auto;
   object-fit: cover;
+}
+
+.logo_card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  border: none !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -18,7 +18,6 @@
   font-size: calc(1.8rem + 1vw) !important;
   padding-top: 8%;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .home_p {
@@ -62,7 +61,6 @@
     font-size: calc(1.2rem + 1vw) !important;
     padding-top: 14%;
     font-weight: 600;
-    text-transform: uppercase;
   }
 }
 
@@ -81,7 +79,6 @@
     font-size: calc(1.2rem + 1vw) !important;
     padding-top: 14%;
     font-weight: 600;
-    text-transform: uppercase;
   }
 
   .banner_img_div {

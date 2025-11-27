@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./contact-detail.module.css";
 import { LuPhoneCall } from "react-icons/lu";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -11,7 +10,7 @@ function ContactDetails() {
         <div className="container py-2">
           <div className="row h-100 d-flex flex-wrap align-items-stretch">
             {/* Card 1 */}
-            <div className="col-lg-4 col-12 my-lg-0 my-2 d-flex">
+            <div className="col-lg-6 col-12 my-lg-0 my-2 d-flex">
               <div
                 className={`card h-100 w-100 ${styles.contact_card} poppins h-100`}
               >
@@ -39,7 +38,7 @@ function ContactDetails() {
                       Email
                     </h6>
                     <p className="fs-14 fw-400 dark-text">
-                      gm@holidayresidency.com, sales@holidayresidency.com
+                      sales@holidayresidency.com
                     </p>
                   </div>
 
@@ -60,7 +59,8 @@ function ContactDetails() {
             </div>
 
             {/* Card 2 */}
-            <div className="col-lg-4 col-12 my-lg-0 my-2 d-flex">
+
+            {/* <div className="col-lg-4 col-12 my-lg-0 my-2 d-flex">
               <div
                 className={`card h-100 w-100 ${styles.contact_card} poppins h-100`}
               >
@@ -88,10 +88,10 @@ function ContactDetails() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Card 3 */}
-            <div className="col-lg-4 col-12 my-lg-0 my-2 d-flex">
+            <div className="col-lg-6 col-12 my-lg-0 my-2 d-flex">
               <div
                 className={`card w-100 h-100 ${styles.contact_card} poppins h-100`}
               >

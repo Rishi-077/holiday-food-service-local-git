@@ -40,6 +40,8 @@ import boxed_sol from "../assets/images/solution/boxed_sol.png";
 import event_sol from "../assets/images/solution/event_sol.png";
 import family_sol from "../assets/images/solution/family_sol.png";
 import snack_sol from "../assets/images/solution/snack_sol.png";
+import corporate_sol from "../assets/images/solution/corporate_sol.png";
+import executive_sol from "../assets/images/solution/executive_sol.png";
 
 // about
 
@@ -93,6 +95,8 @@ const images = {
   boxed_sol,
   event_sol,
   snack_sol,
+  executive_sol,
+  corporate_sol,
 
   // about
 

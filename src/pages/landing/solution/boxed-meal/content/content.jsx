@@ -12,7 +12,7 @@ function Content() {
 
             <div className="col-12 mt-3">
               <div>
-                <h2 className="forum black-text text-start">
+                <h2 className="poppins black-text text-start">
                   Why Choose Boxed Meals?
                 </h2>
                 <div className="row poppins">
@@ -119,7 +119,7 @@ function Content() {
             {/* Commitments */}
             <div className="col-12 my-3">
               <div>
-                <h2 className="forum black-text text-start">Menu Options</h2>
+                <h2 className="poppins black-text text-start">Menu Options</h2>
                 <div className="row poppins">
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -181,7 +181,7 @@ function Content() {
             {/* Standards */}
             <div className="col-12 mt-3">
               <div>
-                <h2 className="forum black-text text-start">Menu Variety</h2>
+                <h2 className="poppins black-text text-start">Menu Variety</h2>
                 <p className="poppins fs-15 fw-400 mt-3">
                   Choose from dozens of options including vegetarian,
                   non-vegetarian, regional specialties, and international

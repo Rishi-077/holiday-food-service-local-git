@@ -65,7 +65,7 @@ function Banner() {
 
         <div className="col-12">
           <div>
-            <h1 className={`${styles.home_title} crimson-text text-center`}>
+            <h1 className={`${styles.home_title} poppins text-center`}>
               Premium Food Services for Every <br />
               Celebration
             </h1>
@@ -75,11 +75,11 @@ function Banner() {
             </p>
 
             <div className="text-center">
-              <button
+              {/* <button
                 className={`btn mx-2 primary-bg fs-14 fw-600 uppercase white-text py-md-3 py-2 px-md-4 px-3 poppins`}
               >
                 Get a Quote
-              </button>
+              </button> */}
               {/* <button
                 className={`btn mx-2 white-bg fs-14 fw-600 uppercase black-text gray-outline py-3 px-4 poppins`}
               >

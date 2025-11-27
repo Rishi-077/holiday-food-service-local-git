@@ -9,6 +9,7 @@ import {
 } from "react-icons/ti";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn, MdOutlineMailOutline } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -63,70 +64,86 @@ function Footer() {
                   </div>
                   <ul className="ms-0 ps-0 mt-4">
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/about-us"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/solution/corporate-food-service"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
                         Solutions
-                      </a>
+                      </Link>
                     </li>
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/contact-us"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-12 d-flex justify-content-lg-center mt-lg-0 mt-4">
+              <div className="col-lg-3 col-12 d-flex justify-content-lg-start mt-lg-0 mt-4">
                 <div>
                   <div>
-                    <h4 className="white-text mb-1">Corporate Office</h4>
+                    <h4 className="white-text mb-1">Solutions</h4>
                     <div className={styles.horizontal_line}></div>
                   </div>
                   <ul className="ms-0 ps-0 mt-4">
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/solution/corporate-food-service"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
-                        Group Ordering
-                      </a>
+                        Corporate Food Service
+                      </Link>
                     </li>
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/solution/boxed-meal"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
-                        Family Style
-                      </a>
+                        Boxed Meal
+                      </Link>
                     </li>
                     <li className="list-remove mb-3">
-                      <a
-                        href="#"
-                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
-                      >
-                        Boxed Meals
-                      </a>
-                    </li>
-                    <li className="list-remove mb-3">
-                      <a
-                        href="#"
+                      <Link
+                        to="/solution/event-caters"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
                         Events
-                      </a>
+                      </Link>
+                    </li>
+                    <li className="list-remove mb-3">
+                      <Link
+                        to="/solution/family-style-catering"
+                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                      >
+                        Family Style
+                      </Link>
+                    </li>
+                    <li className="list-remove mb-3">
+                      <Link
+                        to="/solution/employee-snacks"
+                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                      >
+                        Snack Box
+                      </Link>
+                    </li>
+                    <li className="list-remove mb-3">
+                      <Link
+                        to="/solution/executive-dining"
+                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                      >
+                        Executive Dining
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -154,7 +171,7 @@ function Footer() {
                         <MdOutlineMailOutline className="text-warning me-3" />
                       </div>
                       <div>
-                        <div>
+                        {/* <div>
                           <a
                             href="#"
                             className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
@@ -163,11 +180,12 @@ function Footer() {
                           </a>
                           <span className="white-text">,</span>
                           {"\u00A0 "}
-                        </div>
+                        </div> */}
 
                         <div>
                           <a
-                            href="#"
+                            target="_blank"
+                            href="mailto:sales@holidayresidency.com"
                             className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                           >
                             sales@holidayresidency.com

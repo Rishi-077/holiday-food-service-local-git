@@ -15,10 +15,10 @@ function About() {
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4">
               <div>
-                <h5 className="forum primary-text text-start">
+                {/* <h5 className="poppins primary-text text-start">
                   Catered Events & Celebrations
-                </h5>
-                <h2 className="forum black-text text-start">
+                </h5> */}
+                <h2 className="poppins black-text text-start">
                   Full-service catering for memorable corporate events
                 </h2>
                 <p className="fs-15 fw-400 poppins dark-text">
@@ -37,7 +37,7 @@ function About() {
                   <div className="col-3 d-lg-block d-none">&nbsp;</div>
                   <div className="col-lg-9 col-12">
                     <div>
-                      <h5 className="forum black-text text-start">Benifits</h5>
+                      <h5 className="poppins black-text text-start">Benifits</h5>
 
                       <div className="d-flex flex-sm-row flex-column align-items-start justify-content-between mt-3 gap-sm-4 gap-0 poppins">
                         <div>

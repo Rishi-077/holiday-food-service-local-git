@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./contact.module.css";
 import InputField from "../../../../components/form/input-field";
 import { Controller, useForm } from "react-hook-form";
@@ -7,6 +7,55 @@ import TextAreaField from "../../../../components/form/textarea-field";
 import Select from "react-select";
 
 function ContactForm() {
+  const [service, setService] = useState([
+    {
+      label: "Corporate Food Service",
+      value: "corporate_food_service",
+    },
+    {
+      label: "Boxed Meals",
+      value: "Boxed_Meals",
+    },
+    {
+      label: "Catered Event & Celebration",
+      value: "Catered_Event_Celebration",
+    },
+    {
+      label: "Family Style Catering",
+      value: "Family_Style_Catering",
+    },
+    {
+      label: "Employee Snack Boxes",
+      value: "Employee_Snack_Boxes",
+    },
+    {
+      label: "Executive Dining",
+      value: "Executive_Dining",
+    },
+  ]);
+
+  const [empolyee, setEmployee] = useState([
+    {
+      label: "1 to 10",
+      value: "1-10",
+    },
+    {
+      label: "10 to 50",
+      value: "10-50",
+    },
+    {
+      label: "50 to 200",
+      value: "50-200",
+    },
+    {
+      label: "200 to 500",
+      value: "200-500",
+    },
+    {
+      label: "500+",
+      value: "500+",
+    },
+  ]);
   const {
     control,
     register,
@@ -36,8 +85,8 @@ function ContactForm() {
           <div className="container py-2">
             <div className="row">
               <div className="col-12">
-                <h5 className="forum primary-text text-start">Contact Us</h5>
-                <h2 className="forum black-text text-start">
+                {/* <h5 className="poppins primary-text text-start">Contact Us</h5> */}
+                <h2 className="poppins black-text text-start">
                   Get In Touch With Us
                 </h2>
               </div>
@@ -190,8 +239,8 @@ function ContactForm() {
                                     classNamePrefix="select"
                                     isClearable={false}
                                     isSearchable={true}
-                                    options={[]}
-                                    value={[].find(
+                                    options={empolyee}
+                                    value={empolyee.find(
                                       (option) => option.value === field.value
                                     )}
                                     onChange={(data) => {
@@ -232,8 +281,8 @@ function ContactForm() {
                                     classNamePrefix="select"
                                     isClearable={false}
                                     isSearchable={true}
-                                    options={[]}
-                                    value={[].find(
+                                    options={service}
+                                    value={service.find(
                                       (option) => option.value === field.value
                                     )}
                                     onChange={(data) => {

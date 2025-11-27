@@ -11,7 +11,7 @@ function Story() {
             {/* Story */}
             <div className="col-12">
               <div>
-                <h2 className="forum black-text text-start">Our Story</h2>
+                <h2 className="poppins black-text text-start">Our Story</h2>
                 <p className="poppins fs-15 fw-400 mt-3">
                   We recognized that celebration catering needed a fresh
                   approach that combines quality, variety, and professional
@@ -29,7 +29,7 @@ function Story() {
             {/* Commitments */}
             <div className="col-12 my-3">
               <div>
-                <h2 className="forum black-text text-start">Our Commitments</h2>
+                <h2 className="poppins black-text text-start">Our Commitments</h2>
                 <div className="row poppins">
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -96,7 +96,7 @@ function Story() {
 
             <div className="col-12 mt-3">
               <div>
-                <h2 className="forum black-text text-start">Our Commitments</h2>
+                <h2 className="poppins black-text text-start">Our Values</h2>
                 <div className="row poppins">
                   <div className="col-12 my-3">
                     <ul>
@@ -204,7 +204,7 @@ function Story() {
             {/* Standards */}
             <div className="col-12 mt-3">
               <div>
-                <h2 className="forum black-text text-start">
+                <h2 className="poppins black-text text-start">
                   Health & Safety Standards
                 </h2>
                 <p className="poppins fs-15 fw-400 mt-3">

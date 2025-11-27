@@ -13,7 +13,7 @@ function Content() {
             <div className="col-12 mt-3">
               <div>
                 <h2 className="poppins black-text text-start">
-                  Why Choose Boxed Meals?
+                  Why Choose Executive Dining?
                 </h2>
                 <div className="row poppins">
                   <div className="col-12 my-3">
@@ -21,11 +21,13 @@ function Content() {
                       <li>
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
-                            Customizable Selection :
+                            {" "}
+                            Bespoke Culinary Design :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Choose snacks based on your team's preferences and
-                            dietary needs
+                            Customized multi-course menus crafted by world-class
+                            chefs, tailored to your guests' preferences and the
+                            nature of the event.
                           </span>
                         </div>
                         <div
@@ -40,10 +42,12 @@ function Content() {
                       <li>
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
-                            Regular Replenishment :
+                            Discreet White-Glove Service :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Weekly, bi-weekly, or monthly delivery schedules
+                            Our dedicated service staff operates with the utmost
+                            professionalism and discretion, ensuring
+                            uninterrupted focus on your business conversation.
                           </span>
                         </div>
                         <div
@@ -58,10 +62,12 @@ function Content() {
                       <li>
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
-                            Healthy Options :
+                            Ideal Setting for Strategy :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Nutritious snacks alongside traditional favorites
+                            Access to private dining spaces or exclusive on-site
+                            setups that guarantee privacy, comfort, and an
+                            atmosphere conducive to relationship building.
                           </span>
                         </div>
                         <div
@@ -77,10 +83,13 @@ function Content() {
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
                             {" "}
-                            Budget Management :
+                            Global Palate Accommodation :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            Flexible plans that fit your budget
+                            Effortless integration of specialized diets,
+                            high-profile allergies, and international culinary
+                            preferences, handled with uncompromising attention
+                            to detail.
                           </span>
                         </div>
                         <div
@@ -96,10 +105,11 @@ function Content() {
                         <div className="mt-3">
                           <span className="fs-15 fw-500">
                             {" "}
-                            One-Stop Solution :
+                            Seamless Event Integration :
                           </span>{" "}
                           <span className="fs-15 dark-text">
-                            We manage inventory, delivery, and restocking
+                            Complete logistical management, from wine pairings
+                            and table settings to post-event cleanup.
                           </span>
                         </div>
                         <div
@@ -120,9 +130,7 @@ function Content() {
             {/* Commitments */}
             <div className="col-12 my-3">
               <div>
-                <h2 className="poppins black-text text-start">
-                  Snack Categories
-                </h2>
+                <h2 className="poppins black-text text-start">Perfect For</h2>
                 <div className="row poppins">
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -132,14 +140,11 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Healthy Choices</h6>
-                    <ul className="poppins dark-text fs-15 fw-400 mt-3">
-                      <li>Fresh fruits</li>
-                      <li>Nuts and trail mixes</li>
-                      <li>Protein bars</li>
-                      <li>Dried fruits</li>
-                      <li>Yogurt and smoothies</li>
-                    </ul>
+                    <h6 className="my-3">High-Stakes Client Entertainment</h6>
+                    <p className="poppins fs-15 fw-400 mt-3">
+                      Impress key clients and secure pivotal agreements in a
+                      distinguished, controlled setting.
+                    </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -149,14 +154,11 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Traditional Favorites</h6>
-                    <ul className="poppins dark-text fs-15 fw-400 mt-3">
-                      <li>Chips and namkeen</li>
-                      <li>Cookies and biscuits</li>
-                      <li>Chocolates</li>
-                      <li>Instant noodles</li>
-                      <li>Candy and sweets</li>
-                    </ul>
+                    <h6 className="my-3 my-3">Executive Board Meetings</h6>
+                    <p className="poppins fs-15 fw-400 mt-3">
+                      Provide an unparalleled experience for leadership during
+                      critical corporate gatherings
+                    </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -166,14 +168,11 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Beverages</h6>
-                    <ul className="poppins dark-text fs-15 fw-400 mt-3">
-                      <li>Coffee and tea</li>
-                      <li>Fresh juices</li>
-                      <li>Soft drinks</li>
-                      <li>Energy drinks</li>
-                      <li>Bottled water</li>
-                    </ul>
+                    <h6 className="my-3">Strategic Team Building</h6>
+                    <p className="poppins fs-15 fw-400 mt-3">
+                      Reward and engage senior staff with a sophisticated dining
+                      experience.
+                    </p>
                   </div>
                   <div className="col-md-3 col-sm-6 col-12 my-3">
                     <div
@@ -183,14 +182,11 @@ function Content() {
                         backgroundColor: "var(--primary)",
                       }}
                     ></div>
-                    <h6 className="my-3">Local Specialties</h6>
-                    <ul className="poppins dark-text fs-15 fw-400 mt-3">
-                      <li> South Indian snacks</li>
-                      <li>Regional favorites</li>
-                      <li>Artisan products</li>
-                      <li>Specialty items</li>
-                      <li>Seasonal offerings</li>
-                    </ul>
+                    <h6 className="my-3">VIP Corporate Events</h6>
+                    <p className="poppins fs-15 fw-400 mt-3">
+                      Hosting dignitaries or special guests where presentation
+                      and discretion are paramount.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -200,12 +196,13 @@ function Content() {
             <div className="col-12 mt-3">
               <div>
                 <h2 className="poppins black-text text-start">
-                  Integration with Meal Programs
+                  Cultivate Exceptional Relationships
                 </h2>
                 <p className="poppins fs-15 fw-400 mt-3">
-                  Combine snack delivery with our other catering services for a
-                  complete food solution. Your account manager will coordinate
-                  everything seamlessly.
+                  <span className="fw-500">Ready to host your next pivotal business meal? </span>{" "}
+                  Elevate your client entertaining and executive gatherings with
+                  an experience that speaks volumes about your commitment to
+                  excellence.
                 </p>
               </div>
             </div>

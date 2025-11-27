@@ -21,8 +21,8 @@ function Review() {
           <div className="container py-2">
             <div className="row">
               <div className="col-12">
-                <h5 className="forum primary-text text-center">Reviews</h5>
-                <h2 className="forum black-text text-center">
+                {/* <h5 className="poppins primary-text text-center">Reviews</h5> */}
+                <h2 className="poppins black-text text-center">
                   What Our Clients Say
                 </h2>
               </div>
@@ -73,7 +73,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Sarah Johnson
+                                  Swithraa Nileshraj
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />
@@ -113,7 +113,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Michael Chen
+                                  Venugopala
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />
@@ -153,7 +153,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Jennifer Martinez
+                                  Shivani
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />
@@ -192,7 +192,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Sarah Johnson
+                                  Swithraa Nileshraj
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />
@@ -232,7 +232,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Michael Chen
+                                  Venugopala
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />
@@ -272,7 +272,7 @@ function Review() {
                                   className={`${styles.slide_name} fw-500 mb-1`}
                                 >
                                   {" "}
-                                  Jennifer Martinez
+                                  Shivani
                                 </h6>
                                 <div className="d-flex gap-1">
                                   <FaStar style={{ color: "#FFE70F" }} />

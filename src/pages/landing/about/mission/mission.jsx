@@ -17,8 +17,8 @@ function Mission() {
             </div>
             <div className="col-lg-6 mt-lg-0 mt-4">
               <div>
-                <h5 className="forum primary-text text-start">Our Mission</h5>
-                <h2 className="forum black-text text-start">
+                {/* <h5 className="poppins primary-text text-start">Our Mission</h5> */}
+                <h2 className="poppins black-text text-start">
                   “Bringing Kongu Nadu’s hospitality into the corporate space.”
                 </h2>
                 <p className="fs-15 fw-400 poppins dark-text">

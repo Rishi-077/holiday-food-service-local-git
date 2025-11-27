@@ -3,6 +3,8 @@ import FamilyStyleCatering from "./family-style-catering/family-style-catering";
 import BoxedMeal from "./boxed-meal/boxed-meal";
 import EventCaters from "./event-caters/event-cates";
 import EmployeeSnacks from "./employee-snacks/employee-snacks";
+import ExecutiveDining from "./executive-dining/executive-dining";
+import CorporateService from "./corporate-service/corporate-service";
 
 function Solution() {
   return (
@@ -11,6 +13,8 @@ function Solution() {
       <Route path="/boxed-meal" element={<BoxedMeal />} />
       <Route path="/event-caters" element={<EventCaters />} />
       <Route path="/employee-snacks" element={<EmployeeSnacks />} />
+      <Route path="/executive-dining" element={<ExecutiveDining />} />
+      <Route path="/corporate-food-service" element={<CorporateService />} />
       {/* <Route path="/corporate-food-service" element={<FamilyStyleCatering />} /> */}
     </Routes>
   );

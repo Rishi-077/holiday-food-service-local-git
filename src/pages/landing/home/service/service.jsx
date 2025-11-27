@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./service.module.css";
 import images from "../../../../constants/images";
+import { useNavigate } from "react-router-dom";
 
 function Service() {
+  const navigate = useNavigate();
   return (
     <section className={`${styles.service_section} container-fluid py-5`}>
       <div className="row">
@@ -11,8 +13,8 @@ function Service() {
           <div className="container py-2">
             <div className="row">
               <div className="col-12">
-                <h5 className="forum primary-text text-start">Services</h5>
-                <h2 className="forum black-text text-start">
+                {/* <h5 className="poppins primary-text text-start">Services</h5> */}
+                <h2 className="poppins black-text text-start">
                   Our Catering Solutions
                 </h2>
               </div>
@@ -43,7 +45,13 @@ function Service() {
                         Boost employee morale and productivity
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        navigate("/solution/corporate-food-service")
+                      }
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -75,7 +83,11 @@ function Service() {
                         Efficient distribution for any group size
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() => navigate("/solution/boxed-meal")}
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -107,7 +119,11 @@ function Service() {
                         Day-of coordination for a stress-free event
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() => navigate("/solution/event-caters")}
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -137,7 +153,13 @@ function Service() {
                         Cost-effective solution for groups
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        navigate("/solution/family-style-catering")
+                      }
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -168,7 +190,11 @@ function Service() {
                         Budget management and reporting
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() => navigate("/solution/empoyee-snacks")}
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
@@ -199,7 +225,11 @@ function Service() {
                         Exceptional presentation and artistry
                       </li>
                     </ul>
-                    <button className={`${styles.service_btn}`}>
+                    <button
+                      type="button"
+                      onClick={() => navigate("/solution/executive-dining")}
+                      className={`${styles.service_btn}`}
+                    >
                       Learn More
                     </button>
                   </div>
