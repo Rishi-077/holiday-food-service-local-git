@@ -65,7 +65,7 @@ function Footer() {
                   <ul className="ms-0 ps-0 mt-4">
                     <li className="list-remove mb-3">
                       <Link
-                        to="/about-us"
+                        to="/about"
                         className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
                       >
                         About Us

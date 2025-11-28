@@ -1,13 +1,13 @@
 .nav {
   position: fixed;
-  top: 40px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--white);
-  border: 1px solid var(--gray);
-  border-radius: 5px;
+  /* background: var(--white); */
+  /* border: 1px solid var(--gray); */
+  /* border-radius: 5px; */
   z-index: 999 !important;
-  max-width: 1320px;
+  /* max-width: 1320px; */
   width: 100%;
   transition: all 0.4s ease;
 }
@@ -47,7 +47,7 @@
   font-size: 16px !important;
   font-weight: 500;
   padding: 20px 20px;
-  color: var(--black);
+  /* color: var(--black); */
   cursor: pointer;
 }
 
@@ -182,6 +182,10 @@ summary {
 
 /* Responsive Breakpoint */
 @media (max-width: 992px) {
+  .nav_logo {
+    width: 160px;
+    height: auto;
+  }
   .mobile_menu {
     display: block;
     width: 100%;
@@ -201,15 +205,15 @@ summary {
 
   .nav {
     position: fixed;
-    top: 40px !important;
+    /* top: 40px !important; */
     left: 50%;
     transform: translateX(-50%);
-    background: var(--white);
-    border: 1px solid var(--gray);
+    /* background: var(--white); */
+    /* border: 1px solid var(--gray); */
     border-radius: 0 !important;
     z-index: 999 !important;
-    max-width: 90% !important;
-    width: 90%;
+    max-width: 100% !important;
+    width: 100%;
     transition: all 0.4s ease;
   }
 }
@@ -225,15 +229,15 @@ summary {
 
   .nav {
     position: fixed;
-    top: 40px !important;
+    /* top: 40px !important; */
     left: 50%;
     transform: translateX(-50%);
     background: var(--white);
-    border: 1px solid var(--gray);
+    /* border: 1px solid var(--gray); */
     border-radius: 0 !important;
     z-index: 999 !important;
-    max-width: 95% !important;
-    width: 95%;
+    max-width: 100% !important;
+    width: 100%;
     transition: all 0.4s ease;
   }
 }
@@ -241,14 +245,14 @@ summary {
 @media screen and (max-width: 400px) {
   .nav {
     position: fixed;
-    top: 20px !important;
+    /* top: 20px !important; */
     left: 50%;
     transform: translateX(-50%);
     background: var(--white);
-    border: 1px solid var(--gray);
-    border-radius: 5px;
+    /* border: 1px solid var(--gray); */
+    /* border-radius: 5px; */
     z-index: 999 !important;
-    max-width: 1320px;
+    /* max-width: 1320px; */
     width: 100%;
     transition: all 0.4s ease;
   }

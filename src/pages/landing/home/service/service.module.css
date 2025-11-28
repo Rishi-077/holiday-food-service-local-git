@@ -77,18 +77,18 @@
 }
 
 .service_section {
-  padding-top: 250px !important;
+  padding-top: 50px !important;
   z-index: 2 !important;
 }
 
 @media screen and (max-width: 768px) {
   .service_section {
-    padding-top: 150px !important;
+    padding-top: 50px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .service_section {
-    padding-top: 100px !important;
+    padding-top: 50px !important;
   }
 }

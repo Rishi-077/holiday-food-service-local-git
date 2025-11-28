@@ -28,3 +28,20 @@ export const customLightStyles = {
     color: state.isFocused ? "black" : "black",
   }),
 };
+
+// utils/getTextColor.js
+export function getTextColor(bgColor) {
+  // Remove "#" if exists
+  const color = bgColor.replace("#", "");
+
+  // Extract r, g, b values
+  const r = parseInt(color.substr(0, 2), 16);
+  const g = parseInt(color.substr(2, 2), 16);
+  const b = parseInt(color.substr(4, 2), 16);
+
+  // Calculate luminance
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+  // If luminance is low return white text, else black text
+  return luminance > 0.5 ? "#000000" : "#FFFFFF";
+}

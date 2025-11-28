@@ -1,7 +1,9 @@
 import styles from "./about.module.css";
 import images from "../../../../../constants/images";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
   return (
     <>
       {" "}
@@ -26,7 +28,10 @@ function About() {
                   meal is individually packaged, labeled, and ready to enjoy.
                 </p>
 
-                <button className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4">
+                <button
+                  onClick={() => navigate("/contact-us")}
+                  className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4"
+                >
                   Get in Touch
                 </button>
               </div>
@@ -36,7 +41,9 @@ function About() {
                   <div className="col-3 d-lg-block d-none">&nbsp;</div>
                   <div className="col-lg-9 col-12">
                     <div>
-                      <h5 className="poppins black-text text-start">Benifits</h5>
+                      <h5 className="poppins black-text text-start">
+                        Benifits
+                      </h5>
 
                       <div className="d-flex flex-sm-row flex-column align-items-start justify-content-between mt-3 gap-sm-4 gap-0 poppins">
                         <div>

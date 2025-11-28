@@ -1,7 +1,9 @@
 import styles from "./about.module.css";
 import images from "../../../../../constants/images";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
   return (
     <>
       {" "}
@@ -31,7 +33,10 @@ function About() {
                   with your strategic objectives.
                 </p>
 
-                <button className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4">
+                <button
+                  onClick={() => navigate("/contact-us")}
+                  className="btn primary-bg uppercase shadow-none border-0 white-text fs-14 fw-500 poppins py-2 px-4"
+                >
                   Get in Touch
                 </button>
               </div>

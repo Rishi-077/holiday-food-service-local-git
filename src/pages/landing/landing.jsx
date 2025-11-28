@@ -23,12 +23,10 @@ function Landing() {
       clearTimeout(stopTimeout);
     };
   }, [location.pathname]);
-  
+
   return (
     <>
       <ScrollToTop />
-      <Navbar />
-
       {loading ? (
         <Loader />
       ) : (

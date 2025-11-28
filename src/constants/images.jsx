@@ -23,6 +23,13 @@ import company_5 from "../assets/images/company_5.jpg";
 import company_6 from "../assets/images/company_6.avif";
 import company_7 from "../assets/images/company_7.avif";
 import company_8 from "../assets/images/company_8.avif";
+import hero_1 from "../assets/images/hero_1.png";
+import hero_2 from "../assets/images/hero_2.png";
+import hero_3 from "../assets/images/hero_3.png";
+import hero_vector from "../assets/images/hero_vector.png";
+import hero_4 from "../assets/images/hero_4.png";
+import hero_5 from "../assets/images/hero_5.png";
+import hero_6 from "../assets/images/hero_6.png";
 import half_circle from "../assets/images/half_circle.png";
 import solution_boxed from "../assets/images/solution_boxed.png";
 import solution_corporate from "../assets/images/solution_corporate.png";
@@ -97,6 +104,14 @@ const images = {
   snack_sol,
   executive_sol,
   corporate_sol,
+
+  hero_vector,
+  hero_1,
+  hero_2,
+  hero_3,
+  hero_4,
+  hero_5,
+  hero_6,
 
   // about
 

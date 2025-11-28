@@ -12,7 +12,7 @@ function Banner() {
     <section className={`${styles.home_section} container-fluid`}>
       <div className="row">
         {/* topbar */}
-        <div className={`${styles.top_home} col-12 primary-bg poppins`}>
+        {/* <div className={`${styles.top_home} col-12 primary-bg poppins`}>
           <div className="container py-2">
             <div className="row ">
               <div className="col-4 d-md-block d-none">
@@ -59,7 +59,7 @@ function Banner() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* banner */}
 

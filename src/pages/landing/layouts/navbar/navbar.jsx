@@ -2,7 +2,7 @@ import styles from "./navbar.module.css";
 import images from "../../../../constants/images";
 import { IoChevronDown } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   TiSocialFacebook,
@@ -11,8 +11,9 @@ import {
   TiSocialYoutube,
 } from "react-icons/ti";
 import { GrLocation } from "react-icons/gr";
+import useDynamicTextColor from "../../../../hooks/DynamicTextColor";
 
-function Navbar() {
+function Navbar({ menuColor }) {
   const location = useLocation();
   const [moveDown, setMoveDown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,11 +33,13 @@ function Navbar() {
       <nav className={`container-fluid poppins`}>
         <div
           className={`${styles.nav} ${
-            moveDown ? `${styles.move_down} container` : "container"
+            moveDown
+              ? `${styles.move_down} container-fluid white-bg`
+              : "container-fluid transparent-bg"
           } px-4 mx-auto`}
         >
           <div className="row">
-            <div className="col-12 d-flex align-items-center justify-content-between py-3">
+            <div className="col-12 d-flex align-items-center justify-content-between py-1">
               {/* Logo */}
               <div className={`${styles.nav_logo}`}>
                 <img src={images.holiday_logo} alt="img" />
@@ -48,6 +51,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/"
+                      style={{ color: moveDown ? "#000" : menuColor }}
                       className={`${
                         location.pathname === "/" && "primary-text"
                       }`}
@@ -58,6 +62,7 @@ function Navbar() {
                   <li>
                     <Link
                       to="/about"
+                      style={{ color: moveDown ? "#000" : menuColor }}
                       className={`${
                         location.pathname === "/about" && "primary-text"
                       }`}
@@ -69,12 +74,20 @@ function Navbar() {
                   <li>
                     <div className={`${styles.dropdown}`}>
                       <div
+                        style={{ color: moveDown ? "#000" : menuColor }}
                         className={`${styles.dropbtn} ${
                           location.pathname.includes("/solution") &&
                           "primary-text"
                         }`}
                       >
-                        Our Solutions <IoChevronDown />
+                        Our Solutions{" "}
+                        <IoChevronDown
+                          className={`${styles.dropbtn} ${
+                            location.pathname.includes("/solution") &&
+                            "primary-text"
+                          }`}
+                          style={{ color: moveDown ? "#000" : menuColor }}
+                        />
                       </div>
                       <div className={styles.dropdown_content}>
                         <Link
@@ -141,6 +154,7 @@ function Navbar() {
 
                   <li>
                     <Link
+                      style={{ color: moveDown ? "#000" : menuColor }}
                       to="/contact-us"
                       className={`${
                         location.pathname === "/contact-us" && "primary-text"
@@ -164,7 +178,11 @@ function Navbar() {
                 className={`${styles.hamburger}`}
                 onClick={() => setMenuOpen(!menuOpen)}
               >
-                {menuOpen ? <FaTimes /> : <FaBars />}
+                {menuOpen ? (
+                  <FaTimes style={{ color: moveDown ? "#000" : menuColor }} />
+                ) : (
+                  <FaBars style={{ color: moveDown ? "#000" : menuColor }} />
+                )}
               </div>
             </div>
           </div>

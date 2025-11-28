@@ -5,15 +5,21 @@ import Service from "./service/service";
 import Offer from "./offer/offer";
 import Review from "./review/review";
 import ContactForm from "./contact/contact";
+import Hero from "./hero/hero";
+import Navbar from "../layouts/navbar/navbar";
+import { Element } from "react-scroll";
 function Home() {
   return (
     <>
-      <Banner />
+      <Navbar menuColor={"#000"} />
+      <Hero />
       <Service />
       <ChooseUs />
       <Client />
       <Offer />
-      <ContactForm />
+      <Element name="contact-form">
+        <ContactForm />
+      </Element>
       <Review />
     </>
   );
