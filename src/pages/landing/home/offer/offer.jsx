@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./offer.module.css";
 
 function Offer() {
+  const navigate = useNavigate();
   return (
     <section className={`${styles.service_section} container-fluid py-5`}>
       <div className="row">
@@ -16,7 +18,10 @@ function Offer() {
                       <span className={styles.circle_wrap}>Event</span> Catering
                       Today
                     </h1>
-                    <button className={`btn ${styles.offer_btn}`}>
+                    <button
+                      onClick={() => navigate("/contact-us")}
+                      className={`btn ${styles.offer_btn}`}
+                    >
                       Request a free quote
                     </button>
                   </div>

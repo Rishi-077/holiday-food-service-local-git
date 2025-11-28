@@ -19,9 +19,15 @@ function Hero() {
                 Together With Exceptional Food
               </p>
 
-              <Link to="contact-form" smooth={true} duration={500}>
+              <Link
+                to="contact-form"
+                smooth={true}
+                duration={500}
+                style={{ zIndex: 3 }}
+              >
                 <button
-                  className={`${styles.hero_btn} uppercase mt-3 btn primary-bg white-text shadow-none border-0 poppins`}
+                  className={`${styles.hero_btn} cursor-pointer uppercase mt-3 btn primary-bg white-text shadow-none border-0 poppins`}
+                  style={{ zIndex: 3 }}
                 >
                   Get In Touch
                 </button>
