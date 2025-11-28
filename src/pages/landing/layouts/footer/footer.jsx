@@ -3,6 +3,7 @@ import styles from "./footer.module.css";
 import images from "../../../../constants/images";
 import {
   TiSocialFacebook,
+  TiSocialInstagram,
   TiSocialLinkedin,
   TiSocialTwitter,
   TiSocialYoutube,
@@ -33,16 +34,22 @@ function Footer() {
                       className={`d-flex align-items-center ps-0 mb-0 gap-3 ms-0`}
                     >
                       <li className={`li-remove ${styles.footer_social_icon}`}>
-                        <a href="#">
-                          <TiSocialTwitter className="black-text fs-18" />
+                        <a
+                          href="https://www.instagram.com/holiday_residency/"
+                          target="_black"
+                        >
+                          <TiSocialInstagram className="black-text fs-18" />
                         </a>
                       </li>
                       <li className={`li-remove ${styles.footer_social_icon}`}>
-                        <a href="#">
+                        <a
+                          href="https://www.facebook.com/HolidayResidencyOfficial"
+                          target="_black"
+                        >
                           <TiSocialFacebook className="black-text fs-18" />
                         </a>
                       </li>
-                      <li className={`li-remove ${styles.footer_social_icon}`}>
+                      {/* <li className={`li-remove ${styles.footer_social_icon}`}>
                         <a href="#">
                           <TiSocialYoutube className="black-text fs-18" />
                         </a>
@@ -51,7 +58,7 @@ function Footer() {
                         <a href="#">
                           <TiSocialLinkedin className="black-text fs-18" />
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

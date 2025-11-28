@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Navbar from "./layouts/navbar/navbar";
@@ -35,6 +35,7 @@ function Landing() {
           <Route path="about" element={<About />} />
           <Route path="contact-us" element={<Contact />} />
           <Route path="solution/*" element={<Solution />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       )}
 

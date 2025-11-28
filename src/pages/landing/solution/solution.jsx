@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import FamilyStyleCatering from "./family-style-catering/family-style-catering";
 import BoxedMeal from "./boxed-meal/boxed-meal";
 import EventCaters from "./event-caters/event-cates";
@@ -15,7 +15,7 @@ function Solution() {
       <Route path="/employee-snacks" element={<EmployeeSnacks />} />
       <Route path="/executive-dining" element={<ExecutiveDining />} />
       <Route path="/corporate-food-service" element={<CorporateService />} />
-      {/* <Route path="/corporate-food-service" element={<FamilyStyleCatering />} /> */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
