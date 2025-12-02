@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   TiSocialFacebook,
+  TiSocialInstagram,
   TiSocialLinkedin,
   TiSocialTwitter,
   TiSocialYoutube,
@@ -213,7 +214,7 @@ function Navbar({ menuColor }) {
 
                 <li>
                   <details>
-                    <summary className="px-0">
+                    <summary className="px-0 py-0">
                       Our Solutions <IoChevronDown />
                     </summary>
                     <div className={styles.mobile_dropdown}>
@@ -319,23 +320,19 @@ function Navbar({ menuColor }) {
                             className={`${styles.home_ul} d-flex align-items-center ps-0 mb-0 gap-1 ms-0`}
                           >
                             <li className="li-remove px-1">
-                              <a href="#">
-                                <TiSocialTwitter className="primary-text fs-18" />
+                              <a
+                                href="https://www.instagram.com/holiday_residency/"
+                                target="_black"
+                              >
+                                <TiSocialInstagram className="primary-text fs-18" />
                               </a>
                             </li>
                             <li className="li-remove px-1">
-                              <a href="#">
+                              <a
+                                href="https://www.facebook.com/HolidayResidencyOfficial"
+                                target="_black"
+                              >
                                 <TiSocialFacebook className="primary-text fs-18" />
-                              </a>
-                            </li>
-                            <li className="li-remove px-1">
-                              <a href="#">
-                                <TiSocialYoutube className="primary-text fs-18" />
-                              </a>
-                            </li>
-                            <li className="li-remove px-1">
-                              <a href="#">
-                                <TiSocialLinkedin className="primary-text fs-18" />
                               </a>
                             </li>
                           </ul>

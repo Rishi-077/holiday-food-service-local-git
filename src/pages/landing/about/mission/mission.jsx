@@ -35,7 +35,7 @@ function Mission() {
                       <img src={images.about_vector_1} alt="img" />
                     </div>
                     <h6 className="text-start lh-base">
-                      Best Catering Service 2024
+                      Best Catering Service {new Date().getFullYear()}
                     </h6>
                   </div>
                   <div className="col-sm-6 col-12 d-flex flex-row align-items-center text-center mt-4">
@@ -64,38 +64,38 @@ function Mission() {
               <div
                 className={`${styles.mission_bg} d-flex flex-lg-row flex-column justify-content-between  align-items-lg-center align-items-start mt-5`}
               >
-                <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
+                {/* <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
                   <h4>100+</h4>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-0 ms-lg-0">
                     Restaurant Partners
                   </h6>
-                </div>
+                </div> */}
                 <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
-                  <h4>500+</h4>
+                  <h4>25+</h4>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-0 ms-lg-0">
                     Corporate Clients
                   </h6>
                 </div>
                 <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
-                  <h4>50,000+</h4>
+                  <h4>5,000+</h4>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-0 ms-lg-0">
                     Events Catered
                   </h6>
                 </div>
                 <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
-                  <h4>99%</h4>
+                  <h4>95%</h4>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-0 ms-lg-0">
                     Customer Satisfaction
                   </h6>
                 </div>
-                <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0">
+                {/* <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0">
                   <div>
                     <BsGlobe2 className="fs-25" />
                   </div>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-3 ms-lg-0">
                     Service Coverage
                   </h6>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

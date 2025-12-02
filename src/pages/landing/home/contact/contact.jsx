@@ -1,64 +1,69 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import styles from "./contact.module.css";
 import InputField from "../../../../components/form/input-field";
 import { Controller, useForm } from "react-hook-form";
 import { customLightStyles, keyPress } from "../../../../utils";
 import TextAreaField from "../../../../components/form/textarea-field";
 import Select from "react-select";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
+const service = [
+  {
+    label: "Corporate Food Service",
+    value: "Corporate Food Service",
+  },
+  {
+    label: "Boxed Meals",
+    value: "Boxed Meals",
+  },
+  {
+    label: "Catered Event & Celebration",
+    value: "Catered Event & Celebration",
+  },
+  {
+    label: "Family Style Catering",
+    value: "Family Style Catering",
+  },
+  {
+    label: "Employee Snack Boxes",
+    value: "Employee Snack Boxes",
+  },
+  {
+    label: "Executive Dining",
+    value: "Executive Dining",
+  },
+];
+
+const employee = [
+  {
+    label: "1 to 10",
+    value: "1-10",
+  },
+  {
+    label: "10 to 50",
+    value: "10-50",
+  },
+  {
+    label: "50 to 200",
+    value: "50-200",
+  },
+  {
+    label: "200 to 500",
+    value: "200-500",
+  },
+  {
+    label: "500+",
+    value: "500+",
+  },
+];
 function ContactForm() {
-  const [service, setService] = useState([
-    {
-      label: "Corporate Food Service",
-      value: "corporate_food_service",
-    },
-    {
-      label: "Boxed Meals",
-      value: "Boxed_Meals",
-    },
-    {
-      label: "Catered Event & Celebration",
-      value: "Catered_Event_Celebration",
-    },
-    {
-      label: "Family Style Catering",
-      value: "Family_Style_Catering",
-    },
-    {
-      label: "Employee Snack Boxes",
-      value: "Employee_Snack_Boxes",
-    },
-    {
-      label: "Executive Dining",
-      value: "Executive_Dining",
-    },
-  ]);
-
-  const [empolyee, setEmployee] = useState([
-    {
-      label: "1 to 10",
-      value: "1-10",
-    },
-    {
-      label: "10 to 50",
-      value: "10-50",
-    },
-    {
-      label: "50 to 200",
-      value: "50-200",
-    },
-    {
-      label: "200 to 500",
-      value: "200-500",
-    },
-    {
-      label: "500+",
-      value: "500+",
-    },
-  ]);
+  const url = window.location.origin;
+  const form = useRef();
   const {
     control,
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm({
@@ -74,9 +79,39 @@ function ContactForm() {
     },
   });
 
-  function onsubmit(data) {
-    console.log(data);
-  }
+  const onsubmit = (data) => {
+    let payload = {
+      ...data,
+      website: url,
+    };
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_APP_TEMPLATE_ID,
+        payload,
+        import.meta.env.VITE_APP_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          reset();
+          Swal.fire(
+            "Good job!",
+            "Message Send Successfully :)",
+            "success",
+            "Close"
+          );
+        },
+        (error) => {
+          console.log(error);
+          Swal.fire({
+            title: "Error!",
+            text: "Something went wrong message could not be sent :) ",
+            icon: "error",
+            button: "ok!",
+          });
+        }
+      );
+  };
   return (
     <section className={`${styles.service_section} container-fluid py-5`}>
       <div className="row">
@@ -111,7 +146,7 @@ function ContactForm() {
               <div className="col-lg-6 col-12 mt-lg-0 mt-5 poppins px-lg-5 px-0">
                 <div className={`card ${styles.contact_card}`}>
                   <div className="card-body py-4 px-4">
-                    <form onSubmit={handleSubmit(onsubmit)}>
+                    <form ref={form} onSubmit={handleSubmit(onsubmit)}>
                       <div className="row">
                         <div className="col-6 mb-3">
                           <label
@@ -192,7 +227,6 @@ function ContactForm() {
                             {errors.phone && errors.phone.message}
                           </span>
                         </div>
-
                         <div className="col-6 mb-3">
                           <label
                             htmlFor="company_name"
@@ -239,8 +273,8 @@ function ContactForm() {
                                     classNamePrefix="select"
                                     isClearable={false}
                                     isSearchable={true}
-                                    options={empolyee}
-                                    value={empolyee.find(
+                                    options={employee}
+                                    value={employee.find(
                                       (option) => option.value === field.value
                                     )}
                                     onChange={(data) => {
