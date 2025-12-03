@@ -1,12 +1,9 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-
-import Navbar from "./layouts/navbar/navbar";
 import Home from "./home/home";
 import Footer from "./layouts/footer/footer";
 import About from "./about/about";
 import Contact from "./contact/contact";
-import ScrollToTop from "../../hooks/ScrollToTop";
 import Loader from "../../components/loading/loading";
 import Solution from "./solution/solution";
 
@@ -26,7 +23,6 @@ function Landing() {
 
   return (
     <>
-      <ScrollToTop />
       {loading ? (
         <Loader />
       ) : (

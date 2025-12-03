@@ -11,6 +11,7 @@ import {
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn, MdOutlineMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -167,12 +168,20 @@ function Footer() {
                         <FiPhone className="text-warning me-3" />
                       </div>
                       <a
-                        href="#"
-                        className={`fs-16 fw-400 underline-remove ${styles.footer_link}`}
+                        href="tel:+919629995000"
+                        className={`fs-16 fw-400 text-nowrap underline-remove ${styles.footer_link}`}
                       >
-                        +91 96299 95000, 73977 85070
+                        +91 96299 95000
+                      </a>
+                      <span className="mx-2 white-text">,</span>
+                      <a
+                        href="tel:+917397785070"
+                        className={`fs-16 fw-400 text-nowrap underline-remove ${styles.footer_link}`}
+                      >
+                        73977 85070
                       </a>
                     </li>
+
                     <li className="list-remove mb-3 d-flex align-items-start justify-content-start">
                       <div>
                         <MdOutlineMailOutline className="text-warning me-3" />
@@ -229,8 +238,8 @@ function Footer() {
               </div>
               <div className="col-12 mb-4">
                 <h6 className="white-text text-center">
-                  @ {new Date().getFullYear()} Holiday Food Service. All rights
-                  reserved.
+                  Copyright <FaRegCopyright /> {new Date().getFullYear()}{" "}
+                  Holiday Food Service. All rights reserved.
                 </h6>
               </div>
             </div>

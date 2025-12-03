@@ -2,6 +2,7 @@ import styles from "./contact-detail.module.css";
 import { LuPhoneCall } from "react-icons/lu";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiMailSend } from "react-icons/bi";
+import { FiPhone } from "react-icons/fi";
 
 function ContactDetails() {
   return (
@@ -25,21 +26,39 @@ function ContactDetails() {
                       Phone
                     </h6>
                     <p className="fs-14 fw-400 dark-text">
-                      {" "}
-                      +91 96299 95000, 73977 85070
+                      <li className="list-remove mb-3 d-flex align-items-start">
+                        <a
+                          href="tel:+919629995000"
+                          className={`fs-16 fw-400  dark-text text-nowrap underline-remove ${styles.footer_link}`}
+                        >
+                          +91 96299 95000
+                        </a>
+                        <span className="mx-2 white-text">,</span>
+                        <a
+                          href="tel:+917397785070"
+                          className={`fs-16 fw-400  dark-text text-nowrap underline-remove ${styles.footer_link}`}
+                        >
+                          73977 85070
+                        </a>
+                      </li>{" "}
+                      {/* +91 96299 95000, 73977 85070 */}
                     </p>
                   </div>
 
-                  <div>
+                  <div className="mb-3">
                     <h6>
                       <span className="me-2">
                         <BiMailSend />
                       </span>
                       Email
                     </h6>
-                    <p className="fs-14 fw-400 dark-text">
+                    <a
+                      target="_blank"
+                      href="mailto:sales@holidayresidency.com"
+                      className="fs-15 fw-400 dark-text underline-remove"
+                    >
                       sales@holidayresidency.com
-                    </p>
+                    </a>
                   </div>
 
                   <div>

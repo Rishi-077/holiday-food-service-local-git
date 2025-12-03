@@ -10,10 +10,10 @@ function Banner() {
           <div className="row">
             <div className="col-12">
               <div className={`${styles.banner_content} poppins`}>
-                <h1>About</h1>
+                <h1>About Us</h1>
                 <h6 className="text-nowrap mb-0">
                   {" "}
-                  <Link to="/">Home</Link> | <Link to="/about">About</Link>
+                  <Link to="/">Home</Link> | <Link to="/about">About Us</Link>
                 </h6>
               </div>
             </div>

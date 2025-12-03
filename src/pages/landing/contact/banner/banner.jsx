@@ -13,7 +13,8 @@ function Banner() {
                 <h1>Contact Us</h1>
                 <h6 className="text-nowrap mb-0">
                   {" "}
-                  <Link to="/">Home</Link> | <Link to="/contact-us">Contact Us</Link>
+                  <Link to="/">Home</Link> |{" "}
+                  <Link to="/contact-us">Contact Us</Link>
                 </h6>
               </div>
             </div>

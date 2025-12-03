@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./contact.module.css";
 import InputField from "../../../../components/form/input-field";
 import { Controller, useForm } from "react-hook-form";
@@ -59,6 +59,7 @@ const employee = [
 ];
 function ContactForm() {
   const url = window.location.origin;
+  const [loading, setLoading] = useState(false);
   const form = useRef();
   const {
     control,
@@ -80,6 +81,7 @@ function ContactForm() {
   });
 
   const onsubmit = (data) => {
+    setLoading(true);
     let payload = {
       ...data,
       website: url,
@@ -100,6 +102,7 @@ function ContactForm() {
             "success",
             "Close"
           );
+          setLoading(false);
         },
         (error) => {
           console.log(error);
@@ -109,6 +112,7 @@ function ContactForm() {
             icon: "error",
             button: "ok!",
           });
+          setLoading(false);
         }
       );
   };
@@ -353,7 +357,7 @@ function ContactForm() {
                             {errors.message && errors.message.message}
                           </span>
                         </div>
-                        <div className="col-12 d-flex">
+                        {/* <div className="col-12 d-flex">
                           <input
                             type="checkbox"
                             name="agree"
@@ -367,9 +371,10 @@ function ContactForm() {
                             </a>
                             .
                           </p>
-                        </div>
+                        </div> */}
                         <div className="col-12 mt-4">
                           <button
+                            disabled={loading}
                             type="submit"
                             className={`btn primary-bg white-text fs-16 rounded-3 fw-400 py-3 px-4 w-100 shadow-none border-0 outline-0`}
                           >

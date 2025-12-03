@@ -39,6 +39,17 @@
 }
 
 @media screen and (max-width: 992px) {
+  .about_content {
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f7;
+    position: relative;
+    left: 0;
+    top: 0%;
+    z-index: 0 !important;
+    padding: 50px 40px;
+  }
+
   .banner_content h1 {
     position: absolute;
     z-index: 2;

@@ -25,8 +25,8 @@ function About() {
                 </h2>
                 <p className="fs-15 fw-400 poppins dark-text">
                   From intimate team celebrations to large corporate galas,
-                  Coimbatore Caters provides full-service event catering that
-                  makes your special occasions unforgettable.
+                  Caters provides full-service event catering that makes your
+                  special occasions unforgettable.
                 </p>
 
                 <button

@@ -3,7 +3,7 @@ import images from "../../../../constants/images";
 import { IoChevronDown } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   TiSocialFacebook,
   TiSocialInstagram,
@@ -16,6 +16,7 @@ import useDynamicTextColor from "../../../../hooks/DynamicTextColor";
 
 function Navbar({ menuColor }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [moveDown, setMoveDown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,7 +43,10 @@ function Navbar({ menuColor }) {
           <div className="row">
             <div className="col-12 d-flex align-items-center justify-content-between py-1">
               {/* Logo */}
-              <div className={`${styles.nav_logo}`}>
+              <div
+                className={`${styles.nav_logo}`}
+                onClick={() => navigate("/")}
+              >
                 <img src={images.holiday_logo} alt="img" />
               </div>
 
