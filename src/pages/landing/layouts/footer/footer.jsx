@@ -229,8 +229,8 @@ function Footer() {
               </div>
               <div className="col-12 mb-4">
                 <h6 className="white-text text-center">
-                  @ {new Date().getFullYear()}. Holiday Food Service. All rights
-                  reserved
+                  @ {new Date().getFullYear()} Holiday Food Service. All rights
+                  reserved.
                 </h6>
               </div>
             </div>

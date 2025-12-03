@@ -71,7 +71,7 @@ function Mission() {
                   </h6>
                 </div> */}
                 <div className="d-flex flex-column align-items-lg-start align-items-start pb-lg-0 pb-3">
-                  <h4>25+</h4>
+                  <h4>50+</h4>
                   <h6 className="fs-15 fw-400 mt-lg-3 mt-0 ms-lg-0">
                     Corporate Clients
                   </h6>
