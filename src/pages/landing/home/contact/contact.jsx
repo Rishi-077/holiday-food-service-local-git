@@ -95,8 +95,8 @@ function ContactForm() {
         () => {
           reset();
           Swal.fire(
-            "Good job!",
-            "Message Send Successfully :)",
+            "Thank you for the enquiry.",
+            "Message sent successfully to the respective team.",
             "success",
             "Close"
           );
