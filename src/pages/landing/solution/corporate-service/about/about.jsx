@@ -43,7 +43,7 @@ function About() {
                 </button>
               </div>
 
-              <div className={`${styles.about_content}`}>
+              <div className={`${styles.about_content} mt-lg-0 mt-5`}>
                 <div className="row">
                   <div className="col-3 d-lg-block d-none">&nbsp;</div>
                   <div className="col-lg-9 col-12">
