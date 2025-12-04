@@ -317,7 +317,7 @@ function Navbar({ menuColor }) {
                     <div className="col-8">
                       <div className="d-flex flex-column align-items-start mt-2 justify-content-start">
                         <h6 className="fs-15 fw-400 primary-text mb-0">
-                          Office Timing - Mon to Sun: 9:00am - 6:00pm
+                          Office Timing - Mon to Sun
                         </h6>
                         <div>
                           <ul
