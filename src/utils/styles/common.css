@@ -19,15 +19,22 @@
 body {
   box-sizing: border-box !important;
   width: 100% !important;
-  height: 100% !important;
+  /* height: 100% !important; */
   background-color: #f7f7fa;
+}
+
+html,
+body {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  background-color: #f7f7fa;
+  overflow-x: hidden !important;
 }
 
 :root {
   --primary: #fc6a35;
   --red: #e61818;
   --dark: #484848;
-  /* --dark: #888787; */
   --green: #00b050;
   --blue: #0070c0;
   --black: #000000;
