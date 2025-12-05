@@ -47,7 +47,7 @@ function About() {
                   <div className="col-lg-9 col-12">
                     <div>
                       <h5 className="poppins black-text text-start">
-                        Benifits
+                        Benefits
                       </h5>
                       <div className="d-flex flex-sm-row flex-column align-items-start justify-content-between mt-3 gap-sm-4 gap-0 poppins">
                         <div>
